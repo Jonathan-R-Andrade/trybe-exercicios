@@ -186,10 +186,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### [Bloco 25: Deployment](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/bloco-25-deployment)
 
-- [X] 25.1: _Introdução - Deploy_
-- [ ] 25.2: _NodeJS - Fluxo Assíncrono_
-- [ ] 25.3: _NodeJS - Arquitetura_
-- [ ] 25.4: _[Projeto - A CLI of Ice and Fire]()_
+- [X] 25.1: _Infraestrutura - Deploy com Heroku_
+- [X] 25.2: _Deploy Docker & Heroku_
+- [X] 25.3: _Projeto - Stranger Things_
 
 ##### Bloco 26: NodeJS
 
