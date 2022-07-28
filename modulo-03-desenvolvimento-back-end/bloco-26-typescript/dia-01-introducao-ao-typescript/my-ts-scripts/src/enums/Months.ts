@@ -12,3 +12,5 @@ enum Months {
   November,
   December,
 }
+
+export default Months;
