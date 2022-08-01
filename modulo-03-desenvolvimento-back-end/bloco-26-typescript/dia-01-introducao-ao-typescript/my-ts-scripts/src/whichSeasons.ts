@@ -2,13 +2,7 @@ import Hemispheres from './enums/Hemispheres';
 import Months from './enums/Months';
 import seasonsOfTheMonth from './utils/seasonsOfTheMonth';
 import { keyInSelect } from 'readline-sync';
-
-function enumToArray(enumeration: object): string[] {
-  const values = Object.values(enumeration) as string[];
-  const totalValues = values.length;
-  const halfOfTheValues = totalValues / 2;
-  return values.slice(0, halfOfTheValues);
-}
+import enumToArray from './utils/enumToArray';
 
 const months: string[] = enumToArray(Months);
 const hemispheres: string[] = enumToArray(Hemispheres);
