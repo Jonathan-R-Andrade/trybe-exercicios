@@ -190,9 +190,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 25.2: _Deploy Docker & Heroku_
 - [X] 25.3: _Projeto - Stranger Things_
 
-##### Bloco 26: NodeJS
+##### [Bloco 26: TypeScript](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/bloco-26-typescript)
 
-- [ ] 26.1: _Express: HTTP com Node.js_
+- [X] 26.1: _Introdução ao TypeScript_
 - [ ] 26.2: _Arquitetura de Software - Introdução ao MVC_
 - [ ] 26.3: _[Projeto - Cookmaster]()_
 
