@@ -193,7 +193,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### [Bloco 26: TypeScript](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/bloco-26-typescript)
 
 - [X] 26.1: _Introdução ao TypeScript_
-- [ ] 26.2: _Arquitetura de Software - Introdução ao MVC_
+- [X] 26.2: _Tipagem Estática e Generics_
 - [ ] 26.3: _[Projeto - Cookmaster]()_
 
 ##### Bloco 27: NodeJS
