@@ -20,4 +20,9 @@ export default class UserService {
     const id = await this._userModel.create(user);
     return { id, ...user };
   }
+
+  public async update(id: number, user: User): Promise<User> {
+    await this._userModel.update(id, user);
+    return { id, ...user };
+  }
 }

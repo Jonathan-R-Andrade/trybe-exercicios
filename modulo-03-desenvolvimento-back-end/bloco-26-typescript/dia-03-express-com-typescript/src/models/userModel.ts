@@ -28,4 +28,16 @@ export default class UserModel {
       .execute<ResultSetHeader>(sql, [name, email, password]);
     return insertId;
   }
+
+  public async update(id: number, user: User): Promise<boolean> {
+    const { name, email, password } = user;
+    const sql = `
+      UPDATE Users
+      SET name = ?, email = ?, password = ?
+      WHERE id = ?
+    `;
+    const [{ affectedRows }] = await this._connection
+      .execute<ResultSetHeader>(sql, [name, email, password, id]);
+    return Boolean(affectedRows);
+  }
 }
