@@ -8,6 +8,10 @@ export default class UserService {
     this._userModel = new UserModel();
   }
 
+  public async getAll(): Promise<User[]> {
+    return this._userModel.getAll();
+  }
+
   public async create(user: User): Promise<User> {
     const id = await this._userModel.create(user);
     return { id, ...user };
