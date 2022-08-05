@@ -12,6 +12,10 @@ export default class UserService {
     return this._userModel.getAll();
   }
 
+  public async getById(id: number): Promise<User> {
+    return this._userModel.getById(id);
+  }
+
   public async create(user: User): Promise<User> {
     const id = await this._userModel.create(user);
     return { id, ...user };

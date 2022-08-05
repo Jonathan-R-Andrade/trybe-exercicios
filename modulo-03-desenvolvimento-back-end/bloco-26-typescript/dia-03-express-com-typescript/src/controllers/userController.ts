@@ -13,6 +13,12 @@ export default class UserController {
     res.status(200).send(users);
   };
 
+  getById = async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const user = await this._userService.getById(Number(id));
+    res.status(200).send(user);
+  };
+
   create = async (req: Request, res: Response): Promise<void> => {
     const user = await this._userService.create(req.body);
     res.status(201).send(user);
