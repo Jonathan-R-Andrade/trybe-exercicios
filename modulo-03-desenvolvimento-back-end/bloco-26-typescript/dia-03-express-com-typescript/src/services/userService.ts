@@ -1,3 +1,4 @@
+import Joi from 'joi';
 import User from '../interfaces/userInterface';
 import UserModel from '../models/userModel';
 
@@ -28,5 +29,15 @@ export default class UserService {
 
   public async delete(id: number): Promise<boolean> {
     return this._userModel.delete(id);
+  }
+
+  public validateUser(user: User): void {
+    const schema = Joi.object({
+      name: Joi.string().required().min(3),
+      email: Joi.string().required().email(),
+      password: Joi.string().required().min(6).max(12),
+    }).required().label('User');
+    const { error } = schema.validate(user);
+    if (error) throw new Error(error.message);
   }
 }
