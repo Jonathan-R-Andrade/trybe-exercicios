@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import HttpStatus from '../enums/httpStatus';
 import UserService from '../services/userService';
 
 export default class UserController {
@@ -10,31 +11,31 @@ export default class UserController {
 
   getAll = async (_req: Request, res: Response): Promise<void> => {
     const users = await this._userService.getAll();
-    res.status(200).send(users);
+    res.status(HttpStatus.OK).send(users);
   };
 
   getById = async (req: Request, res: Response): Promise<void> => {
     const { id } = req.params;
     const user = await this._userService.getById(Number(id));
-    res.status(200).send(user);
+    res.status(HttpStatus.OK).send(user);
   };
 
   create = async (req: Request, res: Response): Promise<void> => {
     this._userService.validateUser(req.body);
     const user = await this._userService.create(req.body);
-    res.status(201).send(user);
+    res.status(HttpStatus.CREATED).send(user);
   };
 
   update = async (req: Request, res: Response): Promise<void> => {
     const { id } = req.params;
     this._userService.validateUser(req.body);
     const user = await this._userService.update(Number(id), req.body);
-    res.status(200).send(user);
+    res.status(HttpStatus.OK).send(user);
   };
 
   delete = async (req: Request, res: Response): Promise<void> => {
     const { id } = req.params;
     await this._userService.delete(Number(id));
-    res.status(204).end();
+    res.status(HttpStatus.NO_CONTENT).end();
   };
 }
