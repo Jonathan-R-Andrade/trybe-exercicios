@@ -40,4 +40,11 @@ export default class UserModel {
       .execute<ResultSetHeader>(sql, [name, email, password, id]);
     return Boolean(affectedRows);
   }
+
+  public async delete(id: number): Promise<boolean> {
+    const sql = 'DELETE FROM Users WHERE id = ?';
+    const [{ affectedRows }] = await this._connection
+      .execute<ResultSetHeader>(sql, [id]);
+    return Boolean(affectedRows);
+  }
 }

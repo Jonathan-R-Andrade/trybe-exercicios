@@ -25,4 +25,8 @@ export default class UserService {
     await this._userModel.update(id, user);
     return { id, ...user };
   }
+
+  public async delete(id: number): Promise<boolean> {
+    return this._userModel.delete(id);
+  }
 }

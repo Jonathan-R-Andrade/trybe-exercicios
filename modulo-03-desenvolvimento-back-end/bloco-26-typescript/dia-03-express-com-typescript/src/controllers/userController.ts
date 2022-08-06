@@ -29,4 +29,10 @@ export default class UserController {
     const user = await this._userService.update(Number(id), req.body);
     res.status(200).send(user);
   };
+
+  delete = async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    await this._userService.delete(Number(id));
+    res.status(204).end();
+  };
 }
