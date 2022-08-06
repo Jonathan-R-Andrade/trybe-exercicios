@@ -22,6 +22,7 @@ export default class UserController {
 
   create = async (req: Request, res: Response): Promise<void> => {
     this._userService.validateUser(req.body);
+    await this._userService.checkIfEmailExists(req.body.email)
     const user = await this._userService.create(req.body);
     res.status(HttpStatus.CREATED).send(user);
   };

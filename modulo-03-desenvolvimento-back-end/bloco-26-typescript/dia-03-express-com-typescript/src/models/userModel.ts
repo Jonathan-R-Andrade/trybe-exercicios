@@ -47,4 +47,10 @@ export default class UserModel {
       .execute<ResultSetHeader>(sql, [id]);
     return Boolean(affectedRows);
   }
+
+  public async emailExists(email: string): Promise<boolean> {
+    const sql = 'SELECT email FROM Users WHERE email = ?';
+    const [[exists]]: any = await this._connection.execute(sql, [email]);
+    return Boolean(exists);
+  }
 }

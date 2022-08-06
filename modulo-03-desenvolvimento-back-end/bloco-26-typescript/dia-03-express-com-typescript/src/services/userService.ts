@@ -6,6 +6,9 @@ import UserModel from '../models/userModel';
 
 export default class UserService {
   private _userModel: UserModel;
+  private _errorMessages = {
+    emailAlreadyExists: 'Email already exists',
+  };
 
   constructor() {
     this._userModel = new UserModel();
@@ -31,6 +34,12 @@ export default class UserService {
 
   public async delete(id: number): Promise<boolean> {
     return this._userModel.delete(id);
+  }
+
+  public async checkIfEmailExists(email: string): Promise<void> {
+    const emailExists = await this._userModel.emailExists(email);
+    const { emailAlreadyExists } = this._errorMessages;
+    if (emailExists) throw new HttpError(HttpStatus.CONFLICT, emailAlreadyExists);
   }
 
   public validateUser(user: User): void {
