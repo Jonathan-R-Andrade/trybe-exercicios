@@ -1,4 +1,6 @@
 import Joi from 'joi';
+import HttpStatus from '../enums/httpStatus';
+import HttpError from '../errors/httpError';
 import User from '../interfaces/userInterface';
 import UserModel from '../models/userModel';
 
@@ -38,6 +40,6 @@ export default class UserService {
       password: Joi.string().required().min(6).max(12),
     }).required().label('User');
     const { error } = schema.validate(user);
-    if (error) throw new Error(error.message);
+    if (error) throw new HttpError(HttpStatus.BAD_REQUEST, error.message);
   }
 }
