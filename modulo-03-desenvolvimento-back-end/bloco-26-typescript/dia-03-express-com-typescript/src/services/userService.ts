@@ -8,6 +8,7 @@ export default class UserService {
   private _userModel: UserModel;
   private _errorMessages = {
     emailAlreadyExists: 'Email already exists',
+    userNotFound: 'User not found',
   };
 
   constructor() {
@@ -19,7 +20,10 @@ export default class UserService {
   }
 
   public async getById(id: number): Promise<User> {
-    return this._userModel.getById(id);
+    const user = await this._userModel.getById(id);
+    const { userNotFound } = this._errorMessages;
+    if (!user) throw new HttpError(HttpStatus.NOT_FOUND, userNotFound);
+    return user;
   }
 
   public async create(user: User): Promise<User> {
@@ -28,12 +32,17 @@ export default class UserService {
   }
 
   public async update(id: number, user: User): Promise<User> {
-    await this._userModel.update(id, user);
+    const updated = await this._userModel.update(id, user);
+    const { userNotFound } = this._errorMessages;
+    if (!updated) throw new HttpError(HttpStatus.NOT_FOUND, userNotFound);
     return { id, ...user };
   }
 
   public async delete(id: number): Promise<boolean> {
-    return this._userModel.delete(id);
+    const deleted = await this._userModel.delete(id);
+    const { userNotFound } = this._errorMessages;
+    if (!deleted) throw new HttpError(HttpStatus.NOT_FOUND, userNotFound);
+    return deleted;
   }
 
   public async checkIfEmailExists(email: string): Promise<void> {
