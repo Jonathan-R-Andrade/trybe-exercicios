@@ -1,6 +1,7 @@
 import Joi from 'joi';
 import HttpStatus from '../enums/httpStatus';
 import HttpError from '../errors/httpError';
+import LoginDataInterface from '../interfaces/loginDataInterface';
 import User from '../interfaces/userInterface';
 import UserModel from '../models/userModel';
 
@@ -9,10 +10,20 @@ export default class UserService {
   private _errorMessages = {
     emailAlreadyExists: 'Email already exists',
     userNotFound: 'User not found',
+    invalidLoginData: 'Invalid email or password',
   };
 
   constructor() {
     this._userModel = new UserModel();
+  }
+
+  public async login({ email, password }: LoginDataInterface): Promise<User> {
+    const user = await this._userModel.getByEmail(email);
+    if (!user || user.password !== password) {
+      const { invalidLoginData } = this._errorMessages;
+      throw new HttpError(HttpStatus.UNAUTHORIZED, invalidLoginData);
+    }
+    return user;
   }
 
   public async getAll(): Promise<User[]> {
