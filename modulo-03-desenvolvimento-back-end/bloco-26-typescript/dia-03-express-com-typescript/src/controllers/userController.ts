@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import HttpStatus from '../enums/httpStatus';
 import UserService from '../services/userService';
+import jwt from '../utils/jwt';
 
 export default class UserController {
   private _userService: UserService;
@@ -8,6 +9,13 @@ export default class UserController {
   constructor() {
     this._userService = new UserService();
   }
+
+  login = async (req: Request, res: Response): Promise<void> => {
+    this._userService.validateLoginData(req.body);
+    const { id: userId } = await this._userService.login(req.body);
+    const token = jwt.createToken({ userId });
+    res.status(HttpStatus.OK).send({ token });
+  };
 
   getAll = async (_req: Request, res: Response): Promise<void> => {
     const users = await this._userService.getAll();
