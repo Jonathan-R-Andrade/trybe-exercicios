@@ -71,4 +71,13 @@ export default class UserService {
     const { error } = schema.validate(user);
     if (error) throw new HttpError(HttpStatus.BAD_REQUEST, error.message);
   }
+
+  public validateLoginData(loginData: LoginDataInterface): void {
+    const schema = Joi.object({
+      email: Joi.string().required().email(),
+      password: Joi.string().required().min(6).max(12),
+    }).required().label('Login Data');
+    const { error } = schema.validate(loginData);
+    if (error) throw new HttpError(HttpStatus.BAD_REQUEST, error.message);
+  }
 }
