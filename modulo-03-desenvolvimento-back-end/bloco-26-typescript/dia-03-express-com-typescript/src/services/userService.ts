@@ -56,9 +56,20 @@ export default class UserService {
   }
 
   public async checkIfEmailExists(email: string): Promise<void> {
+    if (typeof email !== 'string') return;
     const emailExists = await this._userModel.emailExists(email);
     const { emailAlreadyExists } = this._errorMessages;
     if (emailExists) throw conflict(emailAlreadyExists);
+  }
+
+  public validateUpdateData(user: User): void {
+    const schema = Joi.object({
+      name: Joi.string().min(3),
+      email: Joi.string().email(),
+      password: Joi.string().min(6).max(12),
+    }).required().min(1).label('User');
+    const { error } = schema.validate(user);
+    if (error) throw badRequest(error.message);
   }
 
   public validateUser(user: User): void {

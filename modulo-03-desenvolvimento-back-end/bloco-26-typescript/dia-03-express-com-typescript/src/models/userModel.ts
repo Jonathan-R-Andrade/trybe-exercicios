@@ -36,14 +36,12 @@ export default class UserModel {
   }
 
   public async update(id: number, user: User): Promise<boolean> {
-    const { name, email, password } = user;
-    const sql = `
-      UPDATE Users
-      SET name = ?, email = ?, password = ?
-      WHERE id = ?
-    `;
+    const keys = Object.keys(user);
+    const values = Object.values(user);
+    const columns = keys.map((key) => `${key} = ?`).join(',');
+    const sql = `UPDATE Users SET ${columns} WHERE id = ?`;
     const [{ affectedRows }] = await this._connection
-      .execute<ResultSetHeader>(sql, [name, email, password, id]);
+      .execute<ResultSetHeader>(sql, [...values, id]);
     return Boolean(affectedRows);
   }
 
