@@ -1,7 +1,6 @@
 import dotenv from 'dotenv';
 import jwt, { SignOptions } from 'jsonwebtoken';
-import HttpStatus from '../enums/httpStatus';
-import HttpError from '../errors/httpError';
+import { unauthorized } from '../errors/httpErrors';
 
 dotenv.config();
 
@@ -13,11 +12,11 @@ function createToken(data: string | object): string {
 }
 
 function verifyToken(token: string) {
-  if (!token) throw new HttpError(HttpStatus.UNAUTHORIZED, 'Token not found');
+  if (!token) throw unauthorized('Token not found');
   try {
     return jwt.verify(token, process.env.JWT_SECRET || SECRET);
   } catch (error) {
-    throw new HttpError(HttpStatus.UNAUTHORIZED, 'Invalid token');
+    throw unauthorized('Invalid token');
   }
 }
 

@@ -1,6 +1,5 @@
 import Joi from 'joi';
-import HttpStatus from '../enums/httpStatus';
-import HttpError from '../errors/httpError';
+import { badRequest, conflict, notFound, unauthorized } from '../errors/httpErrors';
 import LoginDataInterface from '../interfaces/loginDataInterface';
 import User from '../interfaces/userInterface';
 import UserModel from '../models/userModel';
@@ -21,7 +20,7 @@ export default class UserService {
     const user = await this._userModel.getByEmail(email);
     if (!user || user.password !== password) {
       const { invalidLoginData } = this._errorMessages;
-      throw new HttpError(HttpStatus.UNAUTHORIZED, invalidLoginData);
+      throw unauthorized(invalidLoginData);
     }
     return user;
   }
@@ -33,7 +32,7 @@ export default class UserService {
   public async getById(id: number): Promise<User> {
     const user = await this._userModel.getById(id);
     const { userNotFound } = this._errorMessages;
-    if (!user) throw new HttpError(HttpStatus.NOT_FOUND, userNotFound);
+    if (!user) throw notFound(userNotFound);
     return user;
   }
 
@@ -45,21 +44,21 @@ export default class UserService {
   public async update(id: number, user: User): Promise<User> {
     const updated = await this._userModel.update(id, user);
     const { userNotFound } = this._errorMessages;
-    if (!updated) throw new HttpError(HttpStatus.NOT_FOUND, userNotFound);
+    if (!updated) throw notFound(userNotFound);
     return { id, ...user };
   }
 
   public async delete(id: number): Promise<boolean> {
     const deleted = await this._userModel.delete(id);
     const { userNotFound } = this._errorMessages;
-    if (!deleted) throw new HttpError(HttpStatus.NOT_FOUND, userNotFound);
+    if (!deleted) throw notFound(userNotFound);
     return deleted;
   }
 
   public async checkIfEmailExists(email: string): Promise<void> {
     const emailExists = await this._userModel.emailExists(email);
     const { emailAlreadyExists } = this._errorMessages;
-    if (emailExists) throw new HttpError(HttpStatus.CONFLICT, emailAlreadyExists);
+    if (emailExists) throw conflict(emailAlreadyExists);
   }
 
   public validateUser(user: User): void {
@@ -69,7 +68,7 @@ export default class UserService {
       password: Joi.string().required().min(6).max(12),
     }).required().label('User');
     const { error } = schema.validate(user);
-    if (error) throw new HttpError(HttpStatus.BAD_REQUEST, error.message);
+    if (error) throw badRequest(error.message);
   }
 
   public validateLoginData(loginData: LoginDataInterface): void {
@@ -78,6 +77,6 @@ export default class UserService {
       password: Joi.string().required().min(6).max(12),
     }).required().label('Login Data');
     const { error } = schema.validate(loginData);
-    if (error) throw new HttpError(HttpStatus.BAD_REQUEST, error.message);
+    if (error) throw badRequest(error.message);
   }
 }
