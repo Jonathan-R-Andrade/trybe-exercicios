@@ -1,15 +1,6 @@
 import { DataTypes, Model } from 'sequelize';
+import PostAttributes, { PostInput } from '../interfaces/PostInterface';
 import sequelize from '../sequelize';
-
-export interface PostAttributes {
-  id: number,
-  title: string,
-  author: string,
-  category: string,
-  publicationDate: Date
-}
-
-export interface PostInput extends Omit<PostAttributes, 'id'> { };
 
 class Post extends Model<PostAttributes, PostInput> implements PostAttributes {
   id!: number;
