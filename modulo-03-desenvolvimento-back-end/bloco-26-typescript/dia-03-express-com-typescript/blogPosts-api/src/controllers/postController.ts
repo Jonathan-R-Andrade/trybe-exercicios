@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import HttpStatus from '../enums/httpStatus';
 import PostService from '../services/postService';
+import PostValidations from '../services/postValidations';
 
 class PostController {
 
@@ -16,11 +17,13 @@ class PostController {
   }
 
   create = async (req: Request, res: Response): Promise<void> => {
+    PostValidations.validatePostData(req.body);
     const post = await PostService.create(req.body);
     res.status(HttpStatus.CREATED).json(post);
   }
 
   update = async (req: Request, res: Response): Promise<void> => {
+    PostValidations.validateUpdateData(req.body);
     const { id } = req.params;
     const post = await PostService.update(Number(id), req.body);
     res.status(HttpStatus.OK).json(post);
@@ -33,6 +36,7 @@ class PostController {
   }
 
   searchPosts = async (req: Request, res: Response): Promise<void> => {
+    PostValidations.validateSearchTerm(req.query);
     const posts = await PostService.searchPosts(req.query);
     res.status(HttpStatus.OK).json(posts);
   }
