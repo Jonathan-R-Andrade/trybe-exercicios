@@ -1,5 +1,6 @@
 import { Op, WhereOptions } from 'sequelize';
 import { Post } from '../database/models';
+import { notFound } from '../errors/httpErrors';
 import PostAttributes, { PostInput, PostSearchTerm }
   from '../database/interfaces/PostInterface';
 
@@ -21,7 +22,7 @@ class PostService {
 
   async getById(id: number): Promise<PostAttributes> {
     const post = await Post.findByPk(id);
-    if (!post) throw new Error('Not found');
+    if (!post) throw notFound('Not found');
     return post;
   }
 
@@ -32,13 +33,13 @@ class PostService {
 
   async update(id: number, post: PostInput): Promise<PostAttributes> {
     const foundPost = await Post.findByPk(id);
-    if (!foundPost) throw new Error('Not found');
+    if (!foundPost) throw notFound('Not found');
     return await foundPost.update(post);
   }
 
   async delete(id: number): Promise<void> {
     const destroyedRows = await Post.destroy({ where: { id } });
-    if (!destroyedRows) throw new Error('Not found');
+    if (!destroyedRows) throw notFound('Not found');
   }
 
   async searchPosts(searchTerm: PostSearchTerm): Promise<PostAttributes[]> {
