@@ -197,9 +197,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 26.3: _Express com TypeScript_
 - [X] 26.4: _Projeto - Trybe Smith_
 
-##### Bloco 27: NodeJS
+##### [Bloco 27: Programação Orientada a Objetos (POO) e SOLID](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/bloco-27-programacao-orientada-a-objetos-(poo)-e-solid)
 
-- [ ] 27.1: _Arquitetura de Software - Camada de Serviço_
+- [X] 27.1: _Introdução à Orientação a Objetos_
 - [ ] 27.2: _Arquitetura web - Rest e Restful_
 - [ ] 27.3: _[Projeto - Store Manager]()_
 
