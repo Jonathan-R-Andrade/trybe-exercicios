@@ -44,4 +44,20 @@ export default class Date {
     if (this.day < date.day) return -1;
     return 0;
   }
+
+  public format(dateFormat: string): string {
+    let formatedDate = dateFormat;
+
+    const lastDigitsOfTheYear = String(this.year).slice(-2);
+    const monthWithTwoDigits = String(`0${this.month}`).slice(-2);
+    const dayWithTwoDigits = String(`0${this.day}`).slice(-2);
+
+    formatedDate = formatedDate.replace('aaaa', String(this.year));
+    formatedDate = formatedDate.replace('aa', lastDigitsOfTheYear);
+    formatedDate = formatedDate.replace('mm', monthWithTwoDigits);
+    formatedDate = formatedDate.replace('M', Months[this.month]);
+    formatedDate = formatedDate.replace('dd', dayWithTwoDigits);
+
+    return formatedDate;
+  }
 }
