@@ -1,3 +1,5 @@
+import Months from "../enums/Months";
+
 export default class Date {
   constructor(
     public day: number,
@@ -17,6 +19,10 @@ export default class Date {
     if (this.year < 1900) return false;
     if (this.day > this.getLastDayOfMonth()) return false;
     return true;
+  }
+
+  public getMonthName(): string {
+    return Months[this.month];
   }
 
   public getLastDayOfMonth(): number {
