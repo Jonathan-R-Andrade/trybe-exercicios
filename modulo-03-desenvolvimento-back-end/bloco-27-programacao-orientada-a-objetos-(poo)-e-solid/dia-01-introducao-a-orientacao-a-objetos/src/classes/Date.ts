@@ -34,4 +34,14 @@ export default class Date {
   public isLeapYear(): boolean {
     return (this.year % 400 === 0) || (this.year % 100 !== 0 && this.year % 4 === 0);
   }
+
+  public compare(date: Date): number {
+    if (this.year > date.year) return 1;
+    if (this.year < date.year) return -1;
+    if (this.month > date.month) return 1;
+    if (this.month < date.month) return -1;
+    if (this.day > date.day) return 1;
+    if (this.day < date.day) return -1;
+    return 0;
+  }
 }
