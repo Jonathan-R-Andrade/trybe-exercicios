@@ -8,4 +8,15 @@ export default class Order {
     public paymentMethod: 'cash' | 'card',
     public discount?: number,
   ) { }
+
+  public totalToPay(): number {
+    return this.orderItems.reduce((acc, { price }) => acc + price, 0);
+  }
+
+  public totalToPayWithDiscount(): number {
+    const totalToPay = this.totalToPay();
+    const discount = this.discount && this.discount > 0
+      ? this.discount * totalToPay : 0;
+    return totalToPay - discount;
+  }
 }
