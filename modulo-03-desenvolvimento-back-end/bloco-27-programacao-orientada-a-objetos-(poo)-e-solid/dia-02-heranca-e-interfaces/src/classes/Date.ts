@@ -2,9 +2,9 @@ import Months from "../enums/Months";
 
 export default class Date {
   constructor(
-    public day: number,
-    public month: number,
-    public year: number,
+    public day: number = 1,
+    public month: number = 1,
+    public year: number = 1900,
   ) {
     if (!this._isAValidDate()) {
       this.day = 1;
@@ -59,5 +59,10 @@ export default class Date {
     formatedDate = formatedDate.replace('dd', dayWithTwoDigits);
 
     return formatedDate;
+  }
+
+  public now(): Date {
+    const now = new global.Date();
+    return new Date(now.getDate(), now.getMonth() + 1, now.getFullYear());
   }
 }
