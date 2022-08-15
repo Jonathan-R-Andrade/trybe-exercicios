@@ -4,12 +4,12 @@ import { createHash } from "crypto";
 
 export default class Student extends Person {
   private _enrollment: string;
+  private _examsGrades: number[] = [];
+  private _worksGrades: number[] = [];
 
   constructor(
     name: string,
     birthDate: Date,
-    public examsGrades: number[],
-    public worksGrades: number[],
   ) {
     super(name, birthDate);
     this._enrollment = this._generateEnrollment();
@@ -32,5 +32,23 @@ export default class Student extends Person {
 
   public get enrollment(): string {
     return this._enrollment;
+  }
+
+  public get examsGrades(): number[] {
+    return this._examsGrades;
+  }
+
+  public get worksGrades(): number[] {
+    return this._worksGrades;
+  }
+
+  public set examsGrades(examsGrades: number[]) {
+    if (examsGrades.length > 4) throw new Error('Maximum 4 exams grades are allowed.');
+    this._examsGrades = examsGrades;
+  }
+
+  public set worksGrades(worksGrades: number[]) {
+    if (worksGrades.length > 2) throw new Error('Maximum 2 works grades are allowed.');
+    this._worksGrades = worksGrades;
   }
 }
