@@ -200,7 +200,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### [Bloco 27: Programação Orientada a Objetos (POO) e SOLID](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/bloco-27-programacao-orientada-a-objetos-(poo)-e-solid)
 
 - [X] 27.1: _Introdução à Orientação a Objetos_
-- [ ] 27.2: _Arquitetura web - Rest e Restful_
+- [X] 27.2: _Herança e Interfaces_
 - [ ] 27.3: _[Projeto - Store Manager]()_
 
 ##### Bloco 28: NodeJS
