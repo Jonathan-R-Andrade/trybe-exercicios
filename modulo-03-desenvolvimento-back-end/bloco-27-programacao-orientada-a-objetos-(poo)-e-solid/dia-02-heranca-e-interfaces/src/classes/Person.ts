@@ -13,19 +13,10 @@ export default class Person {
     if (this.name.length < 3) throw new Error('Invalid name.');
   }
 
-  private _getCurrentDayMonthAndYear(): { day: number, month: number, year: number } {
-    const now = new global.Date();
-    return {
-      day: now.getDate(),
-      month: now.getMonth() + 1,
-      year: now.getFullYear(),
-    }
-  }
-
   private _checkBirthDate(): void {
-    const { day, month, year } = this._getCurrentDayMonthAndYear();
-    const today = new Date(day, month, year);
-    if (this._birthDate.compare(today) !== -1 || (year - this._birthDate.year) > 120) {
+    const today = new Date().now();
+    if (this._birthDate.compare(today) !== -1
+      || (today.year - this._birthDate.year) > 120) {
       throw new Error('Invalid birthdate.');
     }
   }
