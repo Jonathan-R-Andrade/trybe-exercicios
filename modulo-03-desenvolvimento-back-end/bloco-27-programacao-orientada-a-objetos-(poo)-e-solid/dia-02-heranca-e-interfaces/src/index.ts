@@ -1,6 +1,7 @@
 import Date from "./classes/Date";
 import Person from "./classes/Person";
 import Student from "./classes/Student";
+import Subject from "./classes/Subject";
 
 const person1 = new Person('João', new Date(1, 1, 1996));
 const person2 = new Person('Maria', new Date(2, 2, 1998));
@@ -35,3 +36,13 @@ Soma das notas: ${student.sumGrades()}
 Média das notas: ${student.averageGrade()}
   `);
 });
+
+console.log('----------------------------------------------------\n');
+
+const subjects = [
+  new Subject('Matemática'),
+  new Subject('História'),
+  new Subject('Filosofia'),
+];
+
+console.log('Disciplinas: ', subjects.map((subject) => subject.name), '\n');
