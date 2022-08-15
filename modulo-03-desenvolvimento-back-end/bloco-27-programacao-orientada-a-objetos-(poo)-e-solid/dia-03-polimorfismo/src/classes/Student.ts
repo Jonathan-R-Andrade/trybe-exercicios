@@ -1,8 +1,9 @@
 import Person from "./Person";
 import Date from "./Date";
 import { createHash } from "crypto";
+import Enrollable from "../interfaces/Enrollable";
 
-export default class Student extends Person {
+export default class Student extends Person implements Enrollable {
   private _enrollment: string;
   private _examsGrades: number[] = [];
   private _worksGrades: number[] = [];
@@ -12,10 +13,10 @@ export default class Student extends Person {
     birthDate: Date,
   ) {
     super(name, birthDate);
-    this._enrollment = this._generateEnrollment();
+    this._enrollment = this.generateEnrollment();
   }
 
-  private _generateEnrollment(): string {
+  public generateEnrollment(): string {
     const data = `${this.name}${this.birthDate}${global.Date.now()}${Math.random()}`
     return createHash('sha256').update(data, 'utf-8').digest('hex');
   }
