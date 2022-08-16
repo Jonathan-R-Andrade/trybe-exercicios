@@ -1,12 +1,12 @@
 import Date from "./classes/Date";
-import EvaluationResult from "./classes/EvaluationResult";
-import Exam from "./classes/Exam";
+import EvaluationResult from "./classes/school/EvaluationResult";
+import Exam from "./classes/school/Exam";
 import Order from "./classes/restaurant/Order";
 import OrderItem from "./classes/restaurant/OrderItem";
-import Student from "./classes/Student";
-import Subject from "./classes/Subject";
-import Teacher from "./classes/Teacher";
-import Work from "./classes/Work";
+import Student from "./classes/school/Student";
+import Subject from "./classes/school/Subject";
+import Teacher from "./classes/school/Teacher";
+import Work from "./classes/school/Work";
 
 const randomGrade = (max: number) => Math.round(Math.random() * max);
 

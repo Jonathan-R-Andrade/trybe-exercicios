@@ -1,6 +1,6 @@
-import Date from "./Date";
+import Date from "../Date";
 import Subject from "./Subject";
-import Employee from "./Employee";
+import Employee from "../Employee";
 
 export default class Teacher extends Employee {
   private _subject: Subject;

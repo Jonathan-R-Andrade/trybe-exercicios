@@ -1,7 +1,7 @@
-import Person from "./Person";
-import Date from "./Date";
+import Person from "../Person";
+import Date from "../Date";
 import { createHash } from "crypto";
-import Enrollable from "../interfaces/Enrollable";
+import Enrollable from "../../interfaces/Enrollable";
 import EvaluationResult from "./EvaluationResult";
 
 export default class Student extends Person implements Enrollable {
