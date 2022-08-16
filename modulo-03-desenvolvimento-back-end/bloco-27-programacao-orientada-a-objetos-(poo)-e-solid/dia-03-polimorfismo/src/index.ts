@@ -1,6 +1,8 @@
 import Date from "./classes/Date";
 import EvaluationResult from "./classes/EvaluationResult";
 import Exam from "./classes/Exam";
+import Order from "./classes/restaurant/Order";
+import OrderItem from "./classes/restaurant/OrderItem";
 import Student from "./classes/Student";
 import Subject from "./classes/Subject";
 import Teacher from "./classes/Teacher";
@@ -50,4 +52,26 @@ Disciplina: ${teacher.subject}
 Data de admissão: ${teacher.admissionDate.format('dd/mm/aaaa')}
 Salário: ${teacher.salary}
   `);
+});
+
+console.log('---------------------------------------------------------------\n');
+
+const orderItems1: OrderItem[] = [
+  new OrderItem('Café', 5),
+  new OrderItem('Bolo', 12),
+]
+
+const orderItems2: OrderItem[] = [
+  new OrderItem('Coxinha', 6),
+  new OrderItem('Energético', 8),
+]
+
+const orders: Order[] = [
+  new Order(students[0], 'cartão', orderItems1, 0.15),
+  new Order(students[1], 'dinheiro', orderItems2, 0.3),
+]
+
+orders.forEach((order) => {
+  console.log(`${order.client.name} pagou ${order.calculateTotal()} reais usando ${order.paymentMethod}.`);
+  console.log(`Com desconto fica ${order.calculateTotalWithDiscount()} reais.`, '\n');
 });
