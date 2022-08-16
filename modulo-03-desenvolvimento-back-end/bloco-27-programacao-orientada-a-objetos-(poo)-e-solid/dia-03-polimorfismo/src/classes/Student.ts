@@ -2,11 +2,11 @@ import Person from "./Person";
 import Date from "./Date";
 import { createHash } from "crypto";
 import Enrollable from "../interfaces/Enrollable";
+import EvaluationResult from "./EvaluationResult";
 
 export default class Student extends Person implements Enrollable {
   private _enrollment: string;
-  private _examsGrades: number[] = [];
-  private _worksGrades: number[] = [];
+  private _evaluationsResults: EvaluationResult[] = [];
 
   constructor(
     name: string,
@@ -22,34 +22,18 @@ export default class Student extends Person implements Enrollable {
   }
 
   public sumGrades(): number {
-    const exams = this.examsGrades.reduce((acc, grade) => acc + grade);
-    const works = this.worksGrades.reduce((acc, grade) => acc + grade);
-    return exams + works;
+    return this._evaluationsResults.reduce((acc, { score }) => acc + score, 0);
   }
 
   public averageGrade(): number {
-    return this.sumGrades() / (this.examsGrades.length + this.worksGrades.length);
+    return this.sumGrades() / this._evaluationsResults.length;
+  }
+
+  public addEvaluationResult(evaluationsResult: EvaluationResult): void {
+    this._evaluationsResults.push(evaluationsResult);
   }
 
   public get enrollment(): string {
     return this._enrollment;
-  }
-
-  public get examsGrades(): number[] {
-    return this._examsGrades;
-  }
-
-  public get worksGrades(): number[] {
-    return this._worksGrades;
-  }
-
-  public set examsGrades(examsGrades: number[]) {
-    if (examsGrades.length > 4) throw new Error('Maximum 4 exams grades are allowed.');
-    this._examsGrades = examsGrades;
-  }
-
-  public set worksGrades(worksGrades: number[]) {
-    if (worksGrades.length > 2) throw new Error('Maximum 2 works grades are allowed.');
-    this._worksGrades = worksGrades;
   }
 }
