@@ -15,7 +15,7 @@ class Plants {
   private readonly plantsFile = 'plantsData.json';
   private readonly opsFile = 'opsInfo.json';
 
-  public initPlant(plant: IPlant): IPlant {
+  public static initPlant(plant: IPlant): IPlant {
     const { id, breed, needsSun, origin, specialCare, size } = plant;
     const waterFrequency = needsSun
       ? size * 0.77 + (origin === 'Brazil' ? 8 : 7)
@@ -105,7 +105,7 @@ class Plants {
     const plantsRaw = await fs.readFile(this.plantsFile, { encoding: 'utf8' });
     const plants: IPlant[] = JSON.parse(plantsRaw);
 
-    const newPlant = this.initPlant({ ...plant });
+    const newPlant = Plants.initPlant({ ...plant });
     plants.push(newPlant);
 
     const opsInfoRaw = await fs.readFile(this.opsFile, { encoding: 'utf8' });
