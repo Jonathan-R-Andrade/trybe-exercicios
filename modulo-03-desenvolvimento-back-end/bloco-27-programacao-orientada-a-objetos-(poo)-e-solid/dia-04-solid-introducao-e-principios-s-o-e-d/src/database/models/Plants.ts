@@ -12,8 +12,8 @@ interface IPlant {
 interface IOpsInfo { createdPlants: number }
 
 class Plants {
-  private readonly plantsFile = 'plantsData.json';
-  private readonly opsFile = 'opsInfo.json';
+  private readonly plantsFile = 'src/database/plantsData.json';
+  private readonly opsFile = 'src/database/opsInfo.json';
 
   public static initPlant(plant: IPlant): IPlant {
     const { id, breed, needsSun, origin, specialCare, size } = plant;
