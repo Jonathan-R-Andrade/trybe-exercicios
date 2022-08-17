@@ -1,15 +1,6 @@
 import fs from 'fs/promises';
-
-interface IPlant {
-  id: string,
-  breed: string,
-  needsSun: boolean,
-  origin: string,
-  size: number,
-  specialCare?: { waterFrequency: number }
-}
-
-interface IOpsInfo { createdPlants: number }
+import IOpsInfo from '../interfaces/IOpsInfo';
+import IPlant from '../interfaces/IPlant';
 
 class Plants {
   private readonly plantsFile = 'src/database/plantsData.json';
