@@ -2,30 +2,9 @@ import fs from 'fs/promises';
 import IOpsInfo from '../interfaces/IOpsInfo';
 import IPlant from '../interfaces/IPlant';
 
-class Plants {
+class PlantsModel {
   private readonly plantsFile = 'src/database/plantsData.json';
   private readonly opsFile = 'src/database/opsInfo.json';
-
-  public static initPlant(plant: IPlant): IPlant {
-    const { id, breed, needsSun, origin, specialCare, size } = plant;
-    const waterFrequency = needsSun
-      ? size * 0.77 + (origin === 'Brazil' ? 8 : 7)
-      : (size / 2) * 1.33 + (origin === 'Brazil' ? 8 : 7);
-
-    const newPlant: IPlant = {
-      id,
-      breed,
-      needsSun,
-      origin,
-      specialCare: {
-        ...specialCare,
-        waterFrequency,
-      },
-      size,
-    };
-
-    return newPlant;
-  }
 
   public async getPlants(): Promise<IPlant[]> {
     const plantsRaw = await fs.readFile(this.plantsFile, { encoding: 'utf8' });
@@ -91,12 +70,11 @@ class Plants {
   }
 
   public async savePlant(
-    plant: IPlant,
+    newPlant: IPlant,
   ): Promise<IPlant> {
     const plantsRaw = await fs.readFile(this.plantsFile, { encoding: 'utf8' });
     const plants: IPlant[] = JSON.parse(plantsRaw);
 
-    const newPlant = Plants.initPlant({ ...plant });
     plants.push(newPlant);
 
     const opsInfoRaw = await fs.readFile(this.opsFile, { encoding: 'utf8' });
@@ -109,4 +87,4 @@ class Plants {
   }
 }
 
-export default Plants;
+export default PlantsModel;
