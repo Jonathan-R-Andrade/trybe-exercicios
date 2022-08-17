@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "dev": "ts-node src/server.ts"
   },
   "keywords": [
     "typescript",
