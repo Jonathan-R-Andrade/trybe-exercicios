@@ -1,90 +1,60 @@
-import fs from 'fs/promises';
-import IOpsInfo from '../interfaces/IOpsInfo';
-import IPlant from '../interfaces/IPlant';
+import {
+  Model, DataTypes, HasManyCreateAssociationMixin,
+} from 'sequelize';
+import IPlant, {
+  IPlantAttributes, IPlantCreationAttributes,
+} from '../interfaces/IPlant';
+import sequelize from '../sequelize';
+import SpecialCareModel from './SpecialCareModel';
 
-class PlantsModel {
-  private readonly plantsFile = 'src/database/plantsData.json';
-  private readonly opsFile = 'src/database/opsInfo.json';
+class PlantsModel extends Model<
+  IPlantAttributes,
+  IPlantCreationAttributes
+> implements IPlant {
+  id!: string;
+  breed!: string;
+  size!: number;
+  needsSun!: boolean;
+  origin!: string;
+  specialCare!: SpecialCareModel;
 
-  public async getPlants(): Promise<IPlant[]> {
-    const plantsRaw = await fs.readFile(this.plantsFile, { encoding: 'utf8' });
-    const plants: IPlant[] = JSON.parse(plantsRaw);
-    return plants;
-  }
-
-  public async getPlantById(
-    id: string,
-  ): Promise<IPlant | null> {
-    const plantsRaw = await fs.readFile(this.plantsFile, { encoding: 'utf8' });
-    const plants: IPlant[] = JSON.parse(plantsRaw);
-
-    const plantById = plants.find((plant) => plant.id === id);
-    if (!plantById) return null;
-    return plantById;
-  }
-
-  public async removePlantById(
-    id: string,
-  ): Promise<IPlant | null> {
-    const plantsRaw = await fs.readFile(this.plantsFile, { encoding: 'utf8' });
-    const plants: IPlant[] = JSON.parse(plantsRaw);
-
-    const removedPlant = plants.find((plant) => plant.id === id);
-    if (!removedPlant) return null;
-
-    const newPlants = plants.filter((plant) => plant.id !== id);
-    await fs.writeFile(this.plantsFile, JSON.stringify(newPlants));
-
-    return removedPlant;
-  }
-
-  public async getPlantsThatNeedsSunWithId(
-    id: string,
-  ): Promise<IPlant[]> {
-    const plantsRaw = await fs.readFile(this.plantsFile, { encoding: 'utf8' });
-    const plants: IPlant[] = JSON.parse(plantsRaw);
-
-    const filteredPlants = plants.filter((plant) =>
-      plant.id === id
-      && plant.needsSun
-      && (!plant.specialCare
-        || plant.specialCare.waterFrequency > 2));
-
-    return filteredPlants;
-  }
-
-  public async editPlant(
-    plantId: string,
-    newPlant: IPlant,
-  ): Promise<IPlant> {
-    const plantsRaw = await fs.readFile(this.plantsFile, { encoding: 'utf8' });
-    const plants: IPlant[] = JSON.parse(plantsRaw);
-
-    const updatedPlants = plants.map((plant) => {
-      if (plant.id === plantId) return newPlant;
-      return plant;
-    });
-
-    await fs.writeFile(this.plantsFile, JSON.stringify(updatedPlants));
-    return newPlant;
-  }
-
-  public async savePlant(
-    newPlant: IPlant,
-  ): Promise<IPlant> {
-    const plantsRaw = await fs.readFile(this.plantsFile, { encoding: 'utf8' });
-    const plants: IPlant[] = JSON.parse(plantsRaw);
-
-    plants.push(newPlant);
-
-    const opsInfoRaw = await fs.readFile(this.opsFile, { encoding: 'utf8' });
-    let { createdPlants }: IOpsInfo = JSON.parse(opsInfoRaw);
-    createdPlants += 1;
-    await fs.writeFile(this.opsFile, JSON.stringify({ createdPlants }));
-
-    await fs.writeFile(this.plantsFile, JSON.stringify(plants));
-    return newPlant;
-  }
+  createSpecialCare!: HasManyCreateAssociationMixin<SpecialCareModel, 'plantId'>;
 }
+
+PlantsModel.init({
+  id: {
+    type: DataTypes.CHAR(36),
+    primaryKey: true,
+    allowNull: false,
+    defaultValue: DataTypes.UUIDV4,
+  },
+  breed: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  size: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  needsSun: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+  },
+  origin: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+}, {
+  sequelize,
+  timestamps: false,
+  tableName: 'plants',
+  underscored: true,
+});
+
+PlantsModel.hasOne(SpecialCareModel, {
+  sourceKey: 'id',
+  foreignKey: 'plantId',
+  as: 'specialCare',
+});
 
 export default PlantsModel;
