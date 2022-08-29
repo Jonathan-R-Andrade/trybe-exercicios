@@ -1,13 +1,9 @@
 import IPlant from '../database/interfaces/IPlant';
 import PlantsModel from '../database/models/PlantsModel';
+import SpecialCareModel from '../database/models/SpecialCareModel';
+import sequelize from '../database/sequelize';
 
 class PlantsService {
-  private plantsModel;
-
-  constructor(plantsModel: PlantsModel = new PlantsModel()) {
-    this.plantsModel = plantsModel;
-  }
-
   private static initPlant(plant: IPlant): IPlant {
     const { id, breed, needsSun, origin, specialCare, size } = plant;
     const waterFrequency = needsSun
@@ -29,29 +25,64 @@ class PlantsService {
     return newPlant;
   }
 
-  public async getPlants(): Promise<IPlant[]> {
-    return this.plantsModel.getPlants();
+  private static specialCare = {
+    model: SpecialCareModel,
+    as: 'specialCare',
+    attributes: { exclude: ['id', 'plantId'] },
+  };
+
+  public static async getPlants(): Promise<IPlant[]> {
+    return PlantsModel.findAll({
+      include: this.specialCare,
+    });
   }
 
-  public async getPlantById(id: string): Promise<IPlant | null> {
-    return this.plantsModel.getPlantById(id);
+  public static async getPlantById(id: string): Promise<IPlant | null> {
+    return PlantsModel.findByPk(id, {
+      include: this.specialCare,
+    });
   }
 
-  public async removePlantById(id: string): Promise<IPlant | null> {
-    return this.plantsModel.removePlantById(id);
+  public static async removePlantById(id: string): Promise<boolean> {
+    const removed = await PlantsModel.destroy({ where: { id } });
+    return !!removed;
   }
 
-  public async getPlantsThatNeedsSunWithId(id: string): Promise<IPlant[]> {
-    return this.plantsModel.getPlantsThatNeedsSunWithId(id);
+  public static async getPlantsThatNeedsSunWithId(id: string): Promise<IPlant | null> {
+    return PlantsModel.findOne({
+      where: { id, needsSun: true },
+      include: this.specialCare,
+    });
   }
 
-  public async editPlant(id: string, newPlant: IPlant): Promise<IPlant> {
-    return this.plantsModel.editPlant(id, newPlant);
+  public static async editPlant(id: string, newPlant: IPlant): Promise<IPlant | null> {
+    const plant = await PlantsModel.findByPk(id);
+    if (!plant) return null;
+    const initializedPlant = this.initPlant(newPlant);
+
+    return sequelize.transaction(async (transaction) => {
+      const updatedPlant = await plant.update(initializedPlant, { transaction });
+
+      await SpecialCareModel
+        .update(initializedPlant.specialCare, { where: { plantId: id }, transaction });
+
+      return this.initPlant({
+        ...updatedPlant.toJSON(), specialCare: initializedPlant.specialCare,
+      });
+    });
   }
 
-  public async savePlant(plant: IPlant): Promise<IPlant> {
-    const newPlant = PlantsService.initPlant(plant);
-    return this.plantsModel.savePlant(newPlant);
+  public static async savePlant(plant: IPlant): Promise<IPlant> {
+    const newPlant = this.initPlant(plant);
+
+    return sequelize.transaction(async (transaction) => {
+      const createdPlant = await PlantsModel.create(newPlant, { transaction });
+
+      await createdPlant
+        .createSpecialCare({ ...newPlant.specialCare }, { transaction });
+
+      return { ...newPlant, id: createdPlant.id };
+    });
   }
 }
 
