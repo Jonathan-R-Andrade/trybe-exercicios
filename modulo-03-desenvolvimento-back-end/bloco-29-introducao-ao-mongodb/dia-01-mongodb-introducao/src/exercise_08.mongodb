@@ -1,0 +1,4 @@
+// MongoDB for VS Code
+
+use('exercises');
+db.day_29_1_books.countDocuments({status: "PUBLISH"});
