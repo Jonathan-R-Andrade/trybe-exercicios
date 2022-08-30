@@ -210,9 +210,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 28.1: _Projeto - TFC - Trybe Futebol Clube_
 
-##### Bloco 29: Introdução - Deploy
+##### [Bloco 29: Introdução ao MongoDB](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/bloco-29-introducao-ao-mongodb)
 
-- [ ] 29.1: _Infraestrutura - Deploy com Heroku_
+- [X] 29.1: _MongoDB - Introdução_
 - [ ] 29.2: _Deploy - Gerenciadores de Processos_
 - [ ] 29.3: _[Projeto - Stranger Things]()_
 
