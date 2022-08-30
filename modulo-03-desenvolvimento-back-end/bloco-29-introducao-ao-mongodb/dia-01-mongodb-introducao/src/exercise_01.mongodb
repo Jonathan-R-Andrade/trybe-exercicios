@@ -1,0 +1,4 @@
+// MongoDB for VS Code
+
+use('exercises');
+db.day_29_1_bios.find({_id: 8});
