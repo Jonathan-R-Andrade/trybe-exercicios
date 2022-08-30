@@ -1,7 +1,9 @@
-import IVehicle from './interfaces/IVehicle';
+import IAirVehicle from './interfaces/IAirVehicle';
 
-export default class AirPlane implements IVehicle {
-  drive(): void { console.log('I can not do it! :-('); }
+export default class AirPlane implements IAirVehicle {
+  start(): void { console.log('Starting an airplane'); }
+
+  stop(): void { console.log('Stopping an airplane'); }
 
   fly(): void { console.log('Flying an airplane'); }
 }
