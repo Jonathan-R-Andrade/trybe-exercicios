@@ -1,0 +1,4 @@
+// MongoDB for VS Code
+
+use('exercises');
+db.day_29_1_books.find({}, {_id: 0, title: 1, isbn: 1, pageCount: 1}).limit(3);
