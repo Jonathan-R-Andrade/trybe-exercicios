@@ -203,12 +203,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 27.2: _Herança e Interfaces_
 - [X] 27.3: _Polimorfismo_
 - [X] 27.4: _SOLID - Introdução e Princípios S, O e D_
+- [X] 27.5: _SOLID - Princípios L e I_
+- [X] 27.6: _Projeto - Trybers and Dragons_
 
-##### Bloco 28: NodeJS
+##### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 28.1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 28.2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 28.3: _[Projeto - Cookmaster V2]()_
+- [X] 28.1: _Projeto - TFC - Trybe Futebol Clube_
 
 ##### Bloco 29: Introdução - Deploy
 
