@@ -1,4 +1,4 @@
 export default interface IVehicle {
-  drive(): void;
-  fly(): void;
+  start(): void;
+  stop(): void;
 }
