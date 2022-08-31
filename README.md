@@ -214,7 +214,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 29.1: _MongoDB - Introdução_
 - [X] 29.2: _Filter Operators_
-- [ ] 29.3: _[Projeto - Stranger Things]()_
+- [X] 29.3: _Operadores de consulta_
 
 ##### Bloco 30: Projeto
 
