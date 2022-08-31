@@ -213,7 +213,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### [Bloco 29: Introdução ao MongoDB](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/bloco-29-introducao-ao-mongodb)
 
 - [X] 29.1: _MongoDB - Introdução_
-- [ ] 29.2: _Deploy - Gerenciadores de Processos_
+- [X] 29.2: _Filter Operators_
 - [ ] 29.3: _[Projeto - Stranger Things]()_
 
 ##### Bloco 30: Projeto
