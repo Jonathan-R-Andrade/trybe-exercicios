@@ -1,0 +1,8 @@
+// MongoDB for VS Code
+
+use('class');
+db.superheroes.find({
+  "aspects.weight": {$gte: 80, $lte: 100},
+  race: {$in: ["Human", "Mutant"]},
+  publisher: {$ne: "DC Comics"},
+});
