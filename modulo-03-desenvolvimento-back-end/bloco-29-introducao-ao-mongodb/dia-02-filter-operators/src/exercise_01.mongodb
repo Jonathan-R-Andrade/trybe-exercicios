@@ -1,0 +1,7 @@
+// MongoDB for VS Code
+
+use('class');
+db.superheroes.find();
+
+// Estou inspecionando o documento 🧐️
+// I'm inspecting the document 🧐️
