@@ -1,0 +1,4 @@
+// MongoDB for VS Code
+
+use('class');
+db.superheroes.countDocuments({"aspects.hairColor": {$in: ["Black", "No Hair"]}});
