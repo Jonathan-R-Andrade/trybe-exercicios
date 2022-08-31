@@ -1,0 +1,4 @@
+// MongoDB for VS Code
+
+use('class');
+db.superheroes.find({race: {$ne: "Human"}, "aspects.height": {$lte: 180}});

@@ -1,0 +1,4 @@
+// MongoDB for VS Code
+
+use('class');
+db.superheroes.deleteMany({publisher : "George Lucas"});
