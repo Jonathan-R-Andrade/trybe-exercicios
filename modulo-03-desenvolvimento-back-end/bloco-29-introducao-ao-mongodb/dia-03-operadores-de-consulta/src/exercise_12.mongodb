@@ -1,0 +1,5 @@
+// MongoDB for VS Code
+
+use("cinema");
+db.movies.find({ description: {$regex: /^the/i} });
+// db.movies.find({ description: /^the/i });
