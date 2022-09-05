@@ -1,0 +1,7 @@
+// MongoDB for VS Code
+
+use("class");
+db.movies.updateOne(
+  { title: "Batman" },
+  { $rename: { budget: "estimatedBudget" } },
+);
