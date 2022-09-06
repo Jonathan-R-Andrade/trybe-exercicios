@@ -1,0 +1,10 @@
+// MongoDB for VS Code
+
+use("class");
+db.xmen.updateMany(
+  { occupation: "Junior Staff", areas: { $exists: false } },
+  {
+    $set: { areas: ["Outside"] },
+    $currentDate: { lastUpdated: { $type: "timestamp" } },
+  },
+);
