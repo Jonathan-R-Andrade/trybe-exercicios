@@ -1,0 +1,7 @@
+// MongoDB for VS Code
+
+use("class");
+db.movies.updateOne(
+  { title: "Home Alone" },
+  { $set: { imdbRating: 5.5, budget: 15 } },
+);
