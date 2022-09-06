@@ -1,0 +1,10 @@
+// MongoDB for VS Code
+
+use("class");
+db.xmen.updateMany(
+  { class: "gama" },
+  {
+    $min: { power: 300 },
+    $currentDate: { lastUpdated: { $type: "timestamp" } },
+  },
+);
