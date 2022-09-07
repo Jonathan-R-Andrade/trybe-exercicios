@@ -1,0 +1,18 @@
+// MongoDB for VS Code
+
+use("cinema");
+db.movies.updateOne(
+  { title: "Home Alone" },
+  { $set: { "cast.$[element].character": "Marv" } },
+  { arrayFilters: [{ "element.actor": "Daniel Stern" }] },
+);
+
+// db.movies.updateOne(
+//   { title: "Home Alone", "cast.actor": "Daniel Stern" },
+//   { $set: { "cast.$.character": "Marv" } },
+// );
+
+// db.movies.updateOne(
+//   { title: "Home Alone", "cast.actor": "Daniel Stern" },
+//   { $set: { "cast.2.character": "Marv" } },
+// );
