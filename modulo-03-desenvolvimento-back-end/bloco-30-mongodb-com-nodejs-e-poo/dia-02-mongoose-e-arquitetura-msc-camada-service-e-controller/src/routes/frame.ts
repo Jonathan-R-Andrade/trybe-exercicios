@@ -9,8 +9,8 @@ const frame = new FrameModel();
 const frameService = new FrameService(frame);
 const frameController = new FrameController(frameService);
 
-route.post('/frame', (req, res) => frameController.create(req, res));
-route.get('/frame', (req, res) => frameController.readAll(req, res));
-route.get('/frame/:id', (req, res) => frameController.readOne(req, res));
+route.post('/', (req, res) => frameController.create(req, res));
+route.get('/', (req, res) => frameController.readAll(req, res));
+route.get('/:id', (req, res) => frameController.readOne(req, res));
 
 export default route;
