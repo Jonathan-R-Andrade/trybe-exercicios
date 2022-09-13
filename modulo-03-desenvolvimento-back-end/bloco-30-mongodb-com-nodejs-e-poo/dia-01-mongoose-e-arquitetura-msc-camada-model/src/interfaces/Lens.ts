@@ -8,5 +8,9 @@ const lensZodSchema = z.object({
 
 type ILens = z.infer<typeof lensZodSchema>;
 
+interface ILensWithId extends ILens {
+  _id: string;
+}
+
 export default ILens;
-export { lensZodSchema };
+export { ILensWithId, lensZodSchema };
