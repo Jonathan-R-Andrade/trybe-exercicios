@@ -10,5 +10,9 @@ const FrameZodSchema = z.object({
 
 type IFrame = z.infer<typeof FrameZodSchema>;
 
+interface IFrameWithId extends IFrame {
+  _id: string;
+}
+
 export default IFrame;
-export { FrameZodSchema };
+export { IFrameWithId, FrameZodSchema };
