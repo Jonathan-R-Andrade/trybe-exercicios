@@ -2,7 +2,7 @@ import chai, { expect } from 'chai';
 import sinon from 'sinon';
 import LensModel from '../../models/Lens';
 import { Model } from 'mongoose';
-import { lensMock, lensMockWithId } from '../mocks/lensMock';
+import { lensMock, lensMockWithId, lensesMockWithId } from '../mocks/lensMock';
 import chaiAsPromised from 'chai-as-promised';
 
 chai.use(chaiAsPromised);
@@ -13,6 +13,7 @@ describe('Lens Model', () => {
   before(() => {
     sinon.stub(Model, 'create').resolves(lensMockWithId);
     sinon.stub(Model, 'findOne').resolves(lensMockWithId);
+    sinon.stub(Model, 'find').resolves(lensesMockWithId);
   });
 
   after(() => {
@@ -36,4 +37,12 @@ describe('Lens Model', () => {
       await expect(lensModel.readOne('abc123')).to.be.rejectedWith('InvalidMongoId');
     });
   });
+
+  describe('searching all lenses', () => {
+    it('successfully found', async () => {
+      const lensesFound = await lensModel.read();
+      expect(lensesFound).to.be.deep.equal(lensesMockWithId);
+    });
+  });
+
 });

@@ -2,7 +2,7 @@ import chai, { expect } from 'chai';
 import sinon from 'sinon';
 import FrameModel from '../../models/Frame';
 import { Model } from 'mongoose';
-import { frameMock, frameMockWithId } from '../mocks/frameMock';
+import { frameMock, frameMockWithId, framesMockWithId } from '../mocks/frameMock';
 import chaiAsPromised from 'chai-as-promised';
 
 chai.use(chaiAsPromised);
@@ -13,6 +13,7 @@ describe('Frame Model', () => {
   before(() => {
     sinon.stub(Model, 'create').resolves(frameMockWithId);
     sinon.stub(Model, 'findOne').resolves(frameMockWithId);
+    sinon.stub(Model, 'find').resolves(framesMockWithId);
   });
 
   after(() => {
@@ -34,6 +35,13 @@ describe('Frame Model', () => {
 
     it('_id not found', async () => {
       await expect(frameModel.readOne('123ERRADO')).to.be.rejectedWith('InvalidMongoId');
+    });
+  });
+
+  describe('searching all frames', () => {
+    it('successfully found', async () => {
+      const framesFound = await frameModel.read();
+      expect(framesFound).to.be.deep.equal(framesMockWithId);
     });
   });
 
