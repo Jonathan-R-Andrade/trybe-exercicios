@@ -4,7 +4,7 @@ import { ZodError } from 'zod';
 import { ErrorTypes } from '../../../errors/catalog';
 import FrameModel from '../../../models/Frame';
 import FrameService from '../../../services/Frame';
-import { frameMock, frameMockWithId } from '../../mocks/frameMock';
+import { frameMock, frameMockWithId, framesMockWithId } from '../../mocks/frameMock';
 
 describe('Frame Service', () => {
   const frameModel = new FrameModel();
@@ -17,6 +17,7 @@ describe('Frame Service', () => {
       .onCall(0).resolves(frameMockWithId)
       // já na próxima chamada ele vai mudar seu retorno, isso pode ser feito várias vezes
       .onCall(1).resolves(null);
+    sinon.stub(frameModel, 'read').resolves(framesMockWithId);
   })
   after(() => {
     sinon.restore()
@@ -60,4 +61,12 @@ describe('Frame Service', () => {
       expect(error.message).to.be.deep.equal(ErrorTypes.EntityNotFound);
     });
   });
+
+  describe('ReadAll Frame', () => {
+    it('Success', async () => {
+      const frames = await frameService.readAll();
+      expect(frames).to.be.deep.equal(framesMockWithId);
+    });
+  });
+
 });
