@@ -1,8 +1,11 @@
-import { expect } from 'chai';
+import chai, { expect } from 'chai';
 import sinon from 'sinon';
 import FrameModel from '../../models/Frame';
 import { Model } from 'mongoose';
 import { frameMock, frameMockWithId } from '../mocks/frameMock';
+import chaiAsPromised from 'chai-as-promised';
+
+chai.use(chaiAsPromised);
 
 describe('Frame Model', () => {
   const frameModel = new FrameModel();
@@ -30,11 +33,7 @@ describe('Frame Model', () => {
     });
 
     it('_id not found', async () => {
-      try {
-        await frameModel.readOne('123ERRADO');
-      } catch (error: any) {
-        expect(error.message).to.be.eq('InvalidMongoId');
-      }
+      await expect(frameModel.readOne('123ERRADO')).to.be.rejectedWith('InvalidMongoId');
     });
   });
 
