@@ -217,10 +217,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 29.3: _Operadores de consulta_
 - [X] 29.4: _Updates Simples_
 - [X] 29.5: _Updates Complexos - Arrays_
+- [X] 29.6: _Projeto - Commerce_
 
-##### Bloco 30: Projeto
+##### [Bloco 30: MongoDB com Node.js e POO](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/bloco-30-mongodb-com-nodejs-e-poo)
 
-- [ ] 30.1: _[Projeto - Trybeer]()_
+- [X] 30.1: _Mongoose e arquitetura MSC(camada Model)_
 
 ##### Bloco 31: Arquitetura de Software
 
