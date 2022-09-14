@@ -222,6 +222,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### [Bloco 30: MongoDB com Node.js e POO](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/bloco-30-mongodb-com-nodejs-e-poo)
 
 - [X] 30.1: _Mongoose e arquitetura MSC(camada Model)_
+- [X] 30.2: _Mongoose e arquitetura MSC(camada Service e Controller)_
 
 ##### Bloco 31: Arquitetura de Software
 
