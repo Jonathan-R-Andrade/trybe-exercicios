@@ -31,6 +31,11 @@ class FrameService implements IService<IFrame> {
   public async readAll(): Promise<IFrame[]> {
     return this._frame.read();
   }
+
+  public async delete(id: string): Promise<void> {
+    const result = await this._frame.destroy(id);
+    if (!result) throw new Error(ErrorTypes.EntityNotFound);
+  }
 }
 
 export default FrameService;

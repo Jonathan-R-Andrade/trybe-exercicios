@@ -32,4 +32,12 @@ export default class FrameController {
     const result = await this._service.readAll();
     return res.status(200).json(result);
   }
+
+  public async delete(
+    req: Request,
+    res: Response<void>,
+  ) {
+    await this._service.delete(req.params.id);
+    return res.status(204).end();
+  }
 }
