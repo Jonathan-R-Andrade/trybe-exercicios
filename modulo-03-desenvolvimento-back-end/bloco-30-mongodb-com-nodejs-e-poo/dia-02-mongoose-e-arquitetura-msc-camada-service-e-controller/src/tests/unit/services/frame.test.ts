@@ -1,10 +1,13 @@
-import { expect } from 'chai';
+import chai, { expect } from 'chai';
 import * as sinon from 'sinon';
 import { ZodError } from 'zod';
 import { ErrorTypes } from '../../../errors/catalog';
 import FrameModel from '../../../models/Frame';
 import FrameService from '../../../services/Frame';
 import { frameMock, frameMockWithId, framesMockWithId } from '../../mocks/frameMock';
+import chaiAsPromised from 'chai-as-promised';
+
+chai.use(chaiAsPromised);
 
 describe('Frame Service', () => {
   const frameModel = new FrameModel();
@@ -18,6 +21,9 @@ describe('Frame Service', () => {
       // já na próxima chamada ele vai mudar seu retorno, isso pode ser feito várias vezes
       .onCall(1).resolves(null);
     sinon.stub(frameModel, 'read').resolves(framesMockWithId);
+    sinon.stub(frameModel, 'destroy')
+      .onCall(0).resolves(frameMockWithId)
+      .onCall(1).resolves(null);
   })
   after(() => {
     sinon.restore()
@@ -66,6 +72,18 @@ describe('Frame Service', () => {
     it('Success', async () => {
       const frames = await frameService.readAll();
       expect(frames).to.be.deep.equal(framesMockWithId);
+    });
+  });
+
+  describe('Delete Frame', () => {
+    it('Success', async () => {
+      const result = frameService.delete(frameMockWithId._id);
+      await expect(result).to.not.be.rejectedWith('EntityNotFound');
+    });
+
+    it('Failure', async () => {
+      const result = frameService.delete('Invalid ID');
+      await expect(result).to.be.rejectedWith('EntityNotFound');
     });
   });
 
