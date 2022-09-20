@@ -12,7 +12,7 @@
     "fibonacci": "node ./fibonacci.js",
     "start": "node ./index.js"
   },
-  "author": "Jonathan Reis",
+  "author": "Jonathan Reis de Andrade",
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10"

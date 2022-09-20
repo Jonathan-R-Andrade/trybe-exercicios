@@ -24,4 +24,4 @@ _Exercícios feitos em outros repositórios_
 
 [heroku-react](https://github.com/JonathanRei5/trybe-exercicios-heroku-react)
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

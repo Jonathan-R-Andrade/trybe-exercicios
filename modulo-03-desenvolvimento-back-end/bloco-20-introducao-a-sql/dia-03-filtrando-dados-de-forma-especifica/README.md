@@ -269,4 +269,4 @@ Esse banco de dados é de uso livre, sendo licenciado de acordo com os termos [d
    WHERE Code LIKE '%H%';
    ```
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

@@ -36,4 +36,4 @@ __Exercício 6:__ Vamos adicionar à nossa classe de Data do exercício anterior
        * "dd de M de aa" = 01 de janeiro de 90
        * "dd, M de aaaa" = 01, janeiro de 1990
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

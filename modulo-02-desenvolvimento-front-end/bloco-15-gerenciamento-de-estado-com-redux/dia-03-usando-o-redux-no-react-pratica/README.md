@@ -41,7 +41,7 @@ Esses exercícios foram feitos por:
 
 [AlissonDahlem](https://github.com/AlissonDahlem)
 
-[JonathanRei5](https://www.linkedin.com/in/jonathanrei5)
+[JonathanRei5](https://www.linkedin.com/in/jonathan-r-andrade)
 
 [mu-costa](https://github.com/mu-costa)
 

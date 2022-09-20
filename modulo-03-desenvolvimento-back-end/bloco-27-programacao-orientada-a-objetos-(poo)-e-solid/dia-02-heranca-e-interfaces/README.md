@@ -108,4 +108,4 @@ __Exercício 5:__ Crie uma classe cujos objetos representem uma pessoa professor
 ```
 Para testar, crie uma pessoa professora para cada disciplina criada no exercício anterior.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

@@ -601,4 +601,4 @@ Sugestão:
 
 Dica: o Bootstrap não tem uma classe específica para o tipo de media print. Você deve definir a media query no seu arquivo CSS e estilizar conforme achar melhor! 😉
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

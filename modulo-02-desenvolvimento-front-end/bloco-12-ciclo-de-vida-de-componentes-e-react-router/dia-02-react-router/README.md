@@ -79,4 +79,4 @@ Crie uma visualização que mostre somente os pokémons favoritados e torne-a ac
 
 Salve os pokémons favoritados no local storage e recupere-os quando a aplicação for inicializada.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

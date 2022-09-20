@@ -27,4 +27,4 @@ __Exercício 4:__ Faça os ajustes no index.js para finalizar o endpoint.
 
 _Código fornecido pela Trybe eu desenvolvi o endpoint que recebe o ID de um filme e retorna os detalhes desse filme, também desenvolvi os testes para o mesmo_
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

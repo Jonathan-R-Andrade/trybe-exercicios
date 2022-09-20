@@ -28,4 +28,4 @@ No exemplo acima foi criada uma galeria de fotos de algumas das tecnologias que 
 ![Gallery Footer Exemple](images/trybe-tech-gallery-footer.jpeg)
 
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

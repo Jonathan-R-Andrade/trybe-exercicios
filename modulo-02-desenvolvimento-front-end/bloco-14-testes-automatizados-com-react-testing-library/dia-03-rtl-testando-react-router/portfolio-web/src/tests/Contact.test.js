@@ -8,7 +8,7 @@ describe('Verifica a página "Contact".', () => {
   test('Verifica se existe um link para o LinkedIn e se abre em uma nova aba.', () => {
     renderWithRouter(<Contact />);
     const linkedinLink = screen.getByRole('link', { name: /LinkedIn/i });
-    expect(linkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/jonathanrei5/');
+    expect(linkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/jonathan-r-andrade/');
     expect(linkedinLink).toHaveAttribute('target', '_blanck');
   });
 

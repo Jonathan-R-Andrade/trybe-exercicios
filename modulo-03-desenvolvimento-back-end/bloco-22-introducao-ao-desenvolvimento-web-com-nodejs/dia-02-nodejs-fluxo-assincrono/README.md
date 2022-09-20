@@ -57,4 +57,4 @@ Dica: Utilize a classe RegExp do JS para substituir todas as ocorrências da pal
    * Se o número for múltiplo de 3 e 5, resolva a Promise com o valor "FizzBuzz".
    * Caso contrário, rejeite a Promise com o valor do número.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

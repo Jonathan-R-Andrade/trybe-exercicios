@@ -48,4 +48,4 @@
 
 21. Faça uma requisição para a API Stripe com o curl. (consulte https://stripe.com/docs/development para saber como, eles fornecem uma chave de API de teste). Tente fazer exatamente a mesma requisição para https://httpbin.org/anything.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) do site [jvns.ca](https://jvns.ca/blog/2019/08/27/curl-exercises/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) do site [jvns.ca](https://jvns.ca/blog/2019/08/27/curl-exercises/)

@@ -88,4 +88,4 @@ Para adicionar uma classe de estilização em um elemento HTML, utilize o atribu
 </footer>
 ```
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

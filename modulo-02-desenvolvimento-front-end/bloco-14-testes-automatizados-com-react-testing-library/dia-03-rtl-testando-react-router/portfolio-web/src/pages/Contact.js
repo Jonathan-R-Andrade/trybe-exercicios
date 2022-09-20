@@ -59,7 +59,7 @@ class Contact extends React.Component {
       <main className="Contact">
         <h1>Contato</h1>
         <a
-          href="https://www.linkedin.com/in/jonathanrei5/"
+          href="https://www.linkedin.com/in/jonathan-r-andrade/"
           rel="noopener noreferrer"
           target="_blanck"
         >Meu LinkedIn</a>

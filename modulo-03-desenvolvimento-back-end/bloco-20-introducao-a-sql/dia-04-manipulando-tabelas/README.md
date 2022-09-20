@@ -153,4 +153,4 @@ __Exercício 10:__ Exclua da tabela Movies todos os filmes com menos de 100 minu
    WHERE id IN (1,6,7,8) AND length_minutes < 100;
    ```
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

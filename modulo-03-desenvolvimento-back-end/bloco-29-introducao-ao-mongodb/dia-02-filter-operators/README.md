@@ -76,4 +76,4 @@ __Exercício 18:__ Remova __apenas um__ documento publicado pela __Sony Pictures
 
 __Exercício 19:__ Remova todos os documentos __publicados__ pelo __George Lucas__.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

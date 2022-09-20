@@ -89,4 +89,4 @@ __Exercício 5:__ Em __JavaScript__, temos a High Order Function `filter`. Ela f
 
 Usando `generics` e os demais conceitos aprendidos em __TypeScript__, recrie a função `filter` e nomeie-a como `myFilter`.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

@@ -163,4 +163,4 @@ __Instruções de como restaurar o banco de dados__
     FROM `hr`.`employees`;
     ```
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

@@ -87,4 +87,4 @@ __Regras:__
    * O nome da categoria deve possuir pelo menos 3 caracteres;
    * A `query param` de data de criação deve ser no formato: aaaa-mm-dd;
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

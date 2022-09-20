@@ -22,4 +22,4 @@ __Exercício 7:__ Faça o teste de unidade do método `destroy` referente classe
 
 __Exercício 8:__ Faça o teste de unidade do método `destroy` referente classe `Lens`.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

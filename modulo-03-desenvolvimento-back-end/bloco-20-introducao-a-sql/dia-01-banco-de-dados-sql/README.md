@@ -52,4 +52,4 @@ Colunas:
    Tabela rental tem relação de muitos para um (N:1) com a tabela customer.
    ![Exercício 7](./imagens/exercicio-7-rental.png)
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

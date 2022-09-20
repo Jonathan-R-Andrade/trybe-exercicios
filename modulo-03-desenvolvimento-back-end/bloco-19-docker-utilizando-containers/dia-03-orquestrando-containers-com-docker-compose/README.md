@@ -121,4 +121,4 @@ Crie um arquivo Compose para subir o Wordpress com MySQL:
 
 8. Suba os serviços utilizando docker-compose e abra no terminal para validar o funcionamento.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

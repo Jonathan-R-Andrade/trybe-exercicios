@@ -43,4 +43,4 @@ for (let index = 1; index < array.length; index += 1) {
 [45, 27, 57, 1330, 560, 800, 200, 70, 945, 54]
 ```
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

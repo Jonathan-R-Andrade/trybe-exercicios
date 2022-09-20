@@ -126,4 +126,4 @@ Dica: Para testar suas requisições você pode utilizar o [Postman](https://www
 
 * Escreva testes unitários para o service criado, isolando a camada de models;
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

@@ -207,4 +207,4 @@ __Exercício 11:__ Crie um arquivo `index.ts` que pergunta qual conversão a pes
 3. Quando executado, o script deve exibir uma lista numerada dos scripts disponíveis;
 4. Você pode utilizar o `require` para executar o script em questão.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

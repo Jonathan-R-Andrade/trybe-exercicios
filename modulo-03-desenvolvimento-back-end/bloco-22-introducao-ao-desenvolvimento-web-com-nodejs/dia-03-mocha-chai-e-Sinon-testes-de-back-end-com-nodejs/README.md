@@ -29,4 +29,4 @@
    2. Adapte os testes adicionando stub ao módulo utilizado do fs, isolando assim o teste.
    3. Garanta que todos os testes escritos no exercício 4 vão passar com sucesso.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

@@ -306,4 +306,4 @@ Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao
 * Ao pressionar a tecla "enter" o evento também deverá ser disparado.
 * [Dica - Propriedade: key.](https://www.w3schools.com/JSREF/event_key_key.asp)
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

@@ -79,4 +79,4 @@ Nossos testes não cobrem caso de empate ou quem foi o ganhador.
 
 _O código desse exercício foi fornecido pela Trybe eu implementei a funcionalidade de: mudar de jogador a cada jogada; colocar o símbolo na casa quando um jogador clicar; verificar quem venceu ou se houve empate; permitir que o jogo seja reiniciado a qualquer momento; todos os testes exceto do exercício 3._
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

@@ -44,4 +44,4 @@ Não é necessário montar queries para resolver os exercícios. Crie novas plan
    
    ![Tabela normalizada](./exercicio-4/terceira-forma-normal.png)
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

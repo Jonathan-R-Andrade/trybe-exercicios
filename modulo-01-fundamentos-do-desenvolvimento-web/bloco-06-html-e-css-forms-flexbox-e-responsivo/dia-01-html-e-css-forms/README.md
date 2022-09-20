@@ -61,4 +61,4 @@ _Faça as validações inicialmente pelo HTML_
 <br><br>
 1. Crie um botão Limpar que limpa todos os campos do formulário e a \<div> com seu currículo também.
 <br><br>
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

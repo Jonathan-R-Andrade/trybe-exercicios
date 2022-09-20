@@ -76,4 +76,4 @@ __Parte 2__
 
 _O código para esse exercício parte 2 foi fornecido pela Trybe eu desenvolvi os testes._
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

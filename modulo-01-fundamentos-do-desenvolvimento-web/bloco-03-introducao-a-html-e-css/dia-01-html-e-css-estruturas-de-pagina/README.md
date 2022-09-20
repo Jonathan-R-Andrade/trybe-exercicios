@@ -25,4 +25,4 @@
 2. Crie um link entre a sua lista e os parágrafos de pessoas.
 3. Crie um link para a página do Google.
 
-### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathanrei5/) na [Trybe](https://www.betrybe.com/)
+### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)
