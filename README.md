@@ -135,7 +135,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 09.1 (18.1): _Projeto - App de Receitas_
 
-## [Desenvolvimento Back-end :hourglass_flowing_sand:](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end)
+## [Desenvolvimento Back-end :heavy_check_mark:](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end)
 
 ##### [Seção 01 (Bloco 19): Docker: Utilizando Containers](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/secao-01-docker-utilizando-containers)
 
@@ -226,12 +226,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 13 (Bloco 31): Projeto - App de Delivery
 
-- [ ] 13.1 (31.1): _Projeto - App de Delivery_
+- [X] 13.1 (31.1): _Projeto - App de Delivery_
 
-## Ciência da Computação :hourglass_flowing_sand:
+##### Seção 14 (Bloco 32): MasterClass - CI/CD, VPS
 
-##### Seção 01: :hourglass_flowing_sand:
+- [X] 14.1 (32.1): _CI/CD (sem exercícios)_
+- [X] 14.1 (32.2): _VPS (sem exercícios)_
 
-- [ ] 01.1: :hourglass_flowing_sand:
+## [Ciência da Computação :hourglass_flowing_sand:](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao)
+
+##### [Seção 01 (Bloco 33): Introdução à Python](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-01-introducao-a-python)
+
+- [X] 01.1 (33.1): Aprendendo Python
 
 # [...]
