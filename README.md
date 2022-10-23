@@ -237,7 +237,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### [Seção 01 (Bloco 33): Introdução à Python](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-01-introducao-a-python)
 
-- [X] 01.1 (33.1): Aprendendo Python
-- [X] 01.2 (33.2): Entrada e Saída de Dados
+- [X] 01.1 (33.1): _Aprendendo Python_
+- [X] 01.2 (33.2): _Entrada e Saída de Dados_
+- [X] 01.3 (33.3): _Testes_
+- [X] 01.4 (33.4): _Projeto - Job Insights_
 
 # [...]
