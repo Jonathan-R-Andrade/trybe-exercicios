@@ -27,7 +27,7 @@ def calc_percentage_of_books_by_category(total_books, total_books_by_category):
     }
 
 
-with open("src/books.json", mode="r") as json_file:
+with open("src/data/books.json", mode="r") as json_file:
     books = json.load(json_file)
 
 total_books = len(books)
@@ -36,7 +36,7 @@ percentage_of_books_by_category = calc_percentage_of_books_by_category(
     total_books, total_books_by_category
 )
 
-with open("src/percentage_of_books_by_category.csv", "w") as csv_file:
+with open("src/data/percentage_of_books_by_category.csv", "w") as csv_file:
     fieldnames = ["categoria", "porcentagem"]
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
     writer.writeheader()
