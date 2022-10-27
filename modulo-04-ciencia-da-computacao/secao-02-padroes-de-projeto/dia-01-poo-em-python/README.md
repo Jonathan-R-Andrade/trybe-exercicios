@@ -68,7 +68,7 @@ Dica: Você pode utilizar a função `print` em tela ou em arquivo (que pode ter
 
 __Exercício 5:__ Em um sistema de compras online, temos um código que efetua a compra do pedido. Este código possui *code smells* e precisa ser refatorado. Qual é o *code smell*? Efetue a refatoração do código.
 
-```
+```python
 class Order:
     def __init__(
         self,
