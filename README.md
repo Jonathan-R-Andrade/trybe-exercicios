@@ -242,4 +242,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 01.3 (33.3): _Testes_
 - [X] 01.4 (33.4): _Projeto - Job Insights_
 
+##### [Seção 02 (Bloco 34): Padrões de Projeto](https://github.com/JonathanRei5/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-02-padroes-de-projeto)
+
+- [X] 01.1 (34.1): _P.O.O em Python_
+
 # [...]
