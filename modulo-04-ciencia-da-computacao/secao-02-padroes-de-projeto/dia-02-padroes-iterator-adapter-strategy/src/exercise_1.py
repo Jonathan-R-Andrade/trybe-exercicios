@@ -22,5 +22,15 @@ class StarWarsGame:
         print(f"You caused {self.character.attack()} of damage to the enemy")
 
 
-StarWarsGame(Soldier(5)).fight_enemy()
-StarWarsGame(Jedi(20)).fight_enemy()
+class JediAdapter:
+    def __init__(self, jedi: Jedi):
+        self.jedi = jedi
+
+    def attack(self):
+        return self.jedi.attackWithSaber()
+
+
+if __name__ == "__main__":
+    StarWarsGame(Soldier(5)).fight_enemy()
+    jedi = Jedi(20)
+    StarWarsGame(JediAdapter(jedi)).fight_enemy()
