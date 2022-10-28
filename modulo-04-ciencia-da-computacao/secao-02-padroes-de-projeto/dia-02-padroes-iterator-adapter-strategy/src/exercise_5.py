@@ -23,3 +23,20 @@ class SvgImage:
 
     def get_image(self):
         return f"SVG {self.svg_path} with {self.format}"
+
+
+class SvgImageAdapter(PngInterface):
+    def __init__(self, svg_image: SvgImage):
+        self.svg_image = svg_image
+
+    def draw(self):
+        print(f"Drawing {self.svg_image.get_image()}")
+
+
+if __name__ == "__main__":
+    pngImage = PngImage("fake_image.png")
+    svgImage = SvgImage("fake_image.svg")
+    svgImageAdapter = SvgImageAdapter(svgImage)
+
+    pngImage.draw()
+    svgImageAdapter.draw()
