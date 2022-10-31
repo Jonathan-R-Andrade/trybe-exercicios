@@ -6,41 +6,41 @@ class TV:
         soft.__ligada = False
 
     def aumentar_volume(soft):
-        print("Aumentando o volume")
         if soft.__volume < 99:
             soft.__volume += 1
+            print(f"Volume alterado para {soft.__volume}")
 
     def diminuir_volume(soft):
-        print("Diminuindo o volume")
         if soft.__volume > 0:
             soft.__volume -= 1
+            print(f"Volume alterado para {soft.__volume}")
 
     def modificar_canal(soft, canal):
-        print("Mudando de canal")
         if canal < 1 or canal > 99:
             raise ValueError("Canal não encontrado.")
         soft.__canal = canal
+        print(f"Canal alterado para {soft.__canal}")
 
     def ligar_desligar(soft):
         if soft.__ligada:
             print("Desligando a TV")
             soft.__ligada = False
         else:
-            print("Ligando a TV")
             soft.__ligada = True
+            print("TV ligada")
 
     @property
     def tamanho(soft):
         return soft.__tamanho
 
     def __str__(soft):
-        return f"""
-TV:
-tamanho - {soft.__tamanho}
- ligada - {soft.__ligada}
-  canal - {soft.__canal}
- volume - {soft.__volume}
-"""
+        return (
+            "TV:\n"
+            f"tamanho - {soft.__tamanho}\n"
+            f" ligada - {soft.__ligada}\n"
+            f"  canal - {soft.__canal}\n"
+            f" volume - {soft.__volume}\n"
+        )
 
 
 if __name__ == "__main__":
