@@ -4,10 +4,12 @@ from math import floor
 
 
 class Estatistica:
+    @classmethod
     def media(soft, numeros):
         # return statistics.mean(numeros)
         return sum(numeros) / len(numeros)
 
+    @classmethod
     def mediana(soft, numeros):
         # return statistics.median(numeros)
         numeros.sort()
@@ -19,6 +21,7 @@ class Estatistica:
         else:
             return numeros[index]
 
+    @classmethod
     def moda(soft, numeros, amodal=False):
         # return statistics.multimode(numeros)
         modas = []
@@ -40,17 +43,15 @@ class Estatistica:
 
 
 if __name__ == "__main__":
-    estatistica = Estatistica()
-
     print("Média:")
 
     media1 = [2, 3]
     media2 = [1, 2, 3]
     media3 = [10, 10, 10]
 
-    print(f"A média de {media1} é {estatistica.media(media1)}")
-    print(f"A média de {media2} é {estatistica.media(media2)}")
-    print(f"A média de {media3} é {estatistica.media(media3)}")
+    print(f"A média de {media1} é {Estatistica.media(media1)}")
+    print(f"A média de {media2} é {Estatistica.media(media2)}")
+    print(f"A média de {media3} é {Estatistica.media(media3)}")
 
     print("\nMediana:")
 
@@ -58,9 +59,9 @@ if __name__ == "__main__":
     mediana2 = [7, 9, 5]
     mediana3 = [7, 8, 5, 6]
 
-    print(f"A mediana de {mediana1} é {estatistica.mediana(mediana1)}")
-    print(f"A mediana de {mediana2} é {estatistica.mediana(mediana2)}")
-    print(f"A mediana de {mediana3} é {estatistica.mediana(mediana3)}")
+    print(f"A mediana de {mediana1} é {Estatistica.mediana(mediana1)}")
+    print(f"A mediana de {mediana2} é {Estatistica.mediana(mediana2)}")
+    print(f"A mediana de {mediana3} é {Estatistica.mediana(mediana3)}")
 
     print("\nModa:")
 
@@ -68,12 +69,12 @@ if __name__ == "__main__":
     moda2 = [1, 1, 2, 2, 3]
     moda3 = [1, 1, 2, 2, 3, 3]
 
-    print(f"A moda de {moda1} é {estatistica.moda(moda1)}")
-    print(f"As modas de {moda2} são {estatistica.moda(moda2)}")
-    print(f"As modas de {moda3} são {estatistica.moda(moda3)}")
+    print(f"A moda de {moda1} é {Estatistica.moda(moda1)}")
+    print(f"As modas de {moda2} são {Estatistica.moda(moda2)}")
+    print(f"As modas de {moda3} são {Estatistica.moda(moda3)}")
     try:
         print(
-            f"As modas de {moda3} são {estatistica.moda(moda3, amodal=True)}"
+            f"As modas de {moda3} são {Estatistica.moda(moda3, amodal=True)}"
         )
     except Exception as error:
         print(f'As modas de {moda3} são "Erro: {error}"')
