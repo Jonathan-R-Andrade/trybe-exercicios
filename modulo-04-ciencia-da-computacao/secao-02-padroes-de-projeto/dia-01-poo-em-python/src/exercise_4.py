@@ -42,28 +42,25 @@ class Log:
         data_e_hora = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         return f"[{tipo.name} - {data_e_hora}]: {mensagem}"
 
-    def __log(self, mensagem: str):
+    def __log(self, tipo: TipoDeLog, mensagem: str):
+        mensagem_formatada = self.__formatar(tipo, mensagem)
         for manipulador in self.__manipuladores:
-            manipulador.log(mensagem)
+            manipulador.log(mensagem_formatada)
 
     def adicionar_manipulador(self, manipulador: ManipuladorDeLog):
         self.__manipuladores.append(manipulador)
 
     def info(self, mensagem: str):
-        mensagem_formatada = self.__formatar(TipoDeLog.INFO, mensagem)
-        self.__log(mensagem_formatada)
+        self.__log(TipoDeLog.INFO, mensagem)
 
     def alerta(self, mensagem: str):
-        mensagem_formatada = self.__formatar(TipoDeLog.ALERTA, mensagem)
-        self.__log(mensagem_formatada)
+        self.__log(TipoDeLog.ALERTA, mensagem)
 
     def erro(self, mensagem: str):
-        mensagem_formatada = self.__formatar(TipoDeLog.ERRO, mensagem)
-        self.__log(mensagem_formatada)
+        self.__log(TipoDeLog.ERRO, mensagem)
 
     def debug(self, mensagem: str):
-        mensagem_formatada = self.__formatar(TipoDeLog.DEBUG, mensagem)
-        self.__log(mensagem_formatada)
+        self.__log(TipoDeLog.DEBUG, mensagem)
 
 
 if __name__ == "__main__":
