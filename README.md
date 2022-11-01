@@ -246,5 +246,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 01.1 (34.1): _P.O.O em Python_
 - [X] 01.2 (34.2): _Padrões - Iterator, Adapter, Strategy_
+- [X] 01.3 (34.3): _Padrões - Decorator, Observer, Factory_
+- [X] 01.4 (34.4): _Projeto - Relatórios de Estoque_
 
 # [...]
