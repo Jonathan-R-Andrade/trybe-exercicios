@@ -24,8 +24,8 @@
 
 _Exercícios feitos em outros repositórios_
 
-[Front-end](https://github.com/JonathanRei5/herocker-exercise-frontend)
+[Front-end](https://github.com/Jonathan-R-Andrade/herocker-exercise-frontend)
 
-[Back-end](https://github.com/JonathanRei5/herocker-exercise-backend)
+[Back-end](https://github.com/Jonathan-R-Andrade/herocker-exercise-backend)
 
 ### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)

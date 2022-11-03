@@ -6,7 +6,7 @@ class Projects extends React.Component {
       <main>
         <h1>Projetos</h1>
         <a
-          href="https://github.com/JonathanRei5"
+          href="https://github.com/Jonathan-R-Andrade"
           rel="noopener noreferrer"
           target="_blanck"
         >GitHub</a>

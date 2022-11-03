@@ -20,8 +20,8 @@ __Exercício 4:__ Faça deploy de uma aplicação React.
 
 _Exercícios feitos em outros repositórios_
 
-[heroku-express](https://github.com/JonathanRei5/trybe-exercicios-heroku-express)
+[heroku-express](https://github.com/Jonathan-R-Andrade/trybe-exercicios-heroku-express)
 
-[heroku-react](https://github.com/JonathanRei5/trybe-exercicios-heroku-react)
+[heroku-react](https://github.com/Jonathan-R-Andrade/trybe-exercicios-heroku-react)
 
 ### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)
