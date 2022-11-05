@@ -1,4 +1,5 @@
 .venv
 src/__pycache__
+**/tempCodeRunnerFile.sh
 **/google.html
 **/trybe.html
