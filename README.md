@@ -249,4 +249,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 01.3 (34.3): _Padrões - Decorator, Observer, Factory_
 - [X] 01.4 (34.4): _Projeto - Relatórios de Estoque_
 
+##### [Seção 03 (Bloco 35): Redes e Raspagem de Dados](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-03-redes-e-raspagem-de-dados)
+
+- [X] 01.1 (35.1): _Arquitetura de redes_
+
 # [...]
