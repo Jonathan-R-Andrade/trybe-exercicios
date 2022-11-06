@@ -231,7 +231,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 14 (Bloco 32): MasterClass - CI/CD, VPS
 
 - [X] 14.1 (32.1): _CI/CD (sem exercícios)_
-- [X] 14.1 (32.2): _VPS (sem exercícios)_
+- [X] 14.2 (32.2): _VPS (sem exercícios)_
 
 ## [Ciência da Computação :hourglass_flowing_sand:](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao)
 
@@ -244,13 +244,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### [Seção 02 (Bloco 34): Padrões de Projeto](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-02-padroes-de-projeto)
 
-- [X] 01.1 (34.1): _P.O.O em Python_
-- [X] 01.2 (34.2): _Padrões - Iterator, Adapter, Strategy_
-- [X] 01.3 (34.3): _Padrões - Decorator, Observer, Factory_
-- [X] 01.4 (34.4): _Projeto - Relatórios de Estoque_
+- [X] 02.1 (34.1): _P.O.O em Python_
+- [X] 02.2 (34.2): _Padrões - Iterator, Adapter, Strategy_
+- [X] 02.3 (34.3): _Padrões - Decorator, Observer, Factory_
+- [X] 02.4 (34.4): _Projeto - Relatórios de Estoque_
 
 ##### [Seção 03 (Bloco 35): Redes e Raspagem de Dados](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-03-redes-e-raspagem-de-dados)
 
-- [X] 01.1 (35.1): _Arquitetura de redes_
+- [X] 03.1 (35.1): _Arquitetura de redes_
+- [X] 03.2 (35.2): _Raspagem de Dados_
 
 # [...]
