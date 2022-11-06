@@ -60,4 +60,10 @@ Theory 7
 ...
 ```
 
+# Exercícios - bônus
+
+__Exercício 8:__ Agora um desafio! Vá ao site `https://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags` e recupere as imagens de todas as bandeiras.
+
+__Exercício 9:__ Alguns sites possuem paginação feita através de rolagem infinita. Descubra como funciona a rolagem infinita e extraia todas as citações do seguinte site: `http://quotes.toscrape.com/scroll`.
+
 ### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)
