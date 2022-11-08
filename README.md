@@ -253,5 +253,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 03.1 (35.1): _Arquitetura de redes_
 - [X] 03.2 (35.2): _Raspagem de Dados_
+- [X] 03.3 (35.3): _Outras Ferramentas de Raspagem de Dados_
 
 # [...]
