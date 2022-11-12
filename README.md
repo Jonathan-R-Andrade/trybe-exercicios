@@ -255,4 +255,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 03.2 (35.2): _Raspagem de Dados_
 - [X] 03.3 (35.3): _Outras Ferramentas de Raspagem de Dados_
 
+##### [Seção 04 (Bloco 36): Algoritmos](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-04-algoritmos)
+
+- [X] 04.1 (36.1): _Complexidade de Algoritmos_
+
 # [...]
