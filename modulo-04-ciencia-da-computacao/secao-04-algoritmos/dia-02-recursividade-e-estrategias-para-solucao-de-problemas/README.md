@@ -12,4 +12,13 @@ __Exercício 5:__ Escreva um algoritmo recursivo que identifica se um número é
 
 __Exercício 6:__ Escreva um algoritmo que recebe uma lista e retorne-a na ordem reversa.
 
+## Bônus
+
+__Exercício 7:__ Escreva um algoritmo recursivo que resolva o problema da torre de hanoi, seguindo as instruções:
+
+* Assim como na imagem abaixo, a torre deve conter 3 discos, e três colunas;
+* Os discos começam alinhados na primeira coluna, e devem ser organizados respeitando a ordem de tamanho, na última coluna.
+
+![Tower of Hanoi](./images/tower_of_hanoi.webp)
+
 ### Esses exercícios foram feitos por [min](https://www.linkedin.com/in/jonathan-r-andrade/) na [Trybe](https://www.betrybe.com/)
