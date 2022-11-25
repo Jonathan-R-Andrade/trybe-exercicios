@@ -261,5 +261,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 04.1 (36.1): _Complexidade de Algoritmos_
 - [X] 04.2 (36.2): _Recursividade e Estratégias para solução de problemas_
 - [X] 04.3 (36.3): _Algoritmos de ordenação e busca_
+- [X] 04.4 (36.4): _Projeto - Algoritmos_
+
+##### [Seção 05 (Bloco 37): Estrutura de Dados I: Arrays, Listas, Filas e Pilhas](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-05-estrutura-de-dados-I-arrays-listas-filas-e-pilhas)
+
+- [X] 05.1 (37.1): _Arquitetura de Computadores_
 
 # [...]
