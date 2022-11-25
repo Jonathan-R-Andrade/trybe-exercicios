@@ -1,0 +1,4 @@
+.venv/
+disk/
+**/__pycache__
+**/tempCodeRunnerFile.py
