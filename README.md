@@ -266,5 +266,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### [Seção 05 (Bloco 37): Estrutura de Dados I: Arrays, Listas, Filas e Pilhas](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-05-estrutura-de-dados-I-arrays-listas-filas-e-pilhas)
 
 - [X] 05.1 (37.1): _Arquitetura de Computadores_
+- [X] 05.2 (37.2): _Arrays_
 
 # [...]
