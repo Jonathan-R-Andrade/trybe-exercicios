@@ -94,6 +94,17 @@ class LinkedList:
             return node.value
         return None
 
+    # Complexity O(n)
+    def index_of(self, value):
+        current_node = self.__head
+        current_index = 0
+        while current_node is not None:
+            if current_node.value == value:
+                return current_index
+            current_node = current_node.next
+            current_index += 1
+        return -1
+
     # Complexity O(1)
     def clear(self):
         self.__head = None
@@ -134,13 +145,15 @@ if __name__ == "__main__":
 
     print(linked_list.is_empty(), linked_list)
 
-    print(linked_list.get_element_at(-1))
-    print(linked_list.get_element_at(0))
-    print(linked_list.get_element_at(1))
-    print(linked_list.get_element_at(2))
-    print(linked_list.get_element_at(3))
-    print(linked_list.get_element_at(4))
-    print(linked_list.get_element_at(5))
+    print("Index -1 =", linked_list.get_element_at(-1))
+    print("Index  0 =", linked_list.get_element_at(0))
+    print("Index  1 =", linked_list.get_element_at(1))
+    print("Index  2 =", linked_list.get_element_at(2))
+    print("Index  3 =", linked_list.get_element_at(3))
+    print("Index  4 =", linked_list.get_element_at(4))
+    print("Index  5 =", linked_list.get_element_at(5))
+
+    print("Index of value C =", linked_list.index_of("C"))
 
     linked_list.clear()
 
