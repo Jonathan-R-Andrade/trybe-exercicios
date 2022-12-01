@@ -13,6 +13,16 @@ class LinkedList:
     def __len__(self):
         return self.__length
 
+    # Complexity O(n)
+    def __get_node_at(self, position):
+        if position == self.__length - 1:
+            return self.__tail
+        node_to_be_returned = self.__head
+        while position > 0:
+            node_to_be_returned = node_to_be_returned.next
+            position -= 1
+        return node_to_be_returned
+
     # Complexity O(1)
     def insert_first(self, value):
         first_value = Node(value, self.__head)
@@ -35,10 +45,7 @@ class LinkedList:
             return self.insert_first(value)
         if position >= self.__length:
             return self.insert_last(value)
-        current_value = self.__head
-        while position > 1:
-            current_value = current_value.next
-            position -= 1
+        current_value = self.__get_node_at(position - 1)
         new_value = Node(value, current_value.next)
         current_value.next = new_value
         self.__length += 1
@@ -58,9 +65,7 @@ class LinkedList:
     def remove_last(self):
         if self.__length <= 1:
             return self.remove_first()
-        before_last_value = self.__head
-        while before_last_value.next.next:
-            before_last_value = before_last_value.next
+        before_last_value = self.__get_node_at(self.__length - 2)
         value_to_be_removed = before_last_value.next
         before_last_value.next = None
         self.__tail = before_last_value
@@ -73,10 +78,7 @@ class LinkedList:
             return self.remove_first()
         if position >= self.__length - 1:
             return self.remove_last()
-        previous_to_be_removed = self.__head
-        while position > 1:
-            previous_to_be_removed = previous_to_be_removed.next
-            position -= 1
+        previous_to_be_removed = self.__get_node_at(position - 1)
         value_to_be_removed = previous_to_be_removed.next
         previous_to_be_removed.next = value_to_be_removed.next
         value_to_be_removed.next = None
@@ -87,11 +89,16 @@ class LinkedList:
     def get_element_at(self, position):
         if position >= self.__length or position < 0:
             return None
-        value_to_be_returned = self.__head
-        while position > 0:
-            value_to_be_returned = value_to_be_returned.next
-            position -= 1
-        return value_to_be_returned.value
+        node = self.__get_node_at(position)
+        if node is not None:
+            return node.value
+        return None
+
+    # Complexity O(1)
+    def clear(self):
+        self.__head = None
+        self.__tail = None
+        self.__length = 0
 
     # Complexity O(1)
     def is_empty(self):
@@ -134,3 +141,7 @@ if __name__ == "__main__":
     print(linked_list.get_element_at(3))
     print(linked_list.get_element_at(4))
     print(linked_list.get_element_at(5))
+
+    linked_list.clear()
+
+    print(linked_list.is_empty(), linked_list)
