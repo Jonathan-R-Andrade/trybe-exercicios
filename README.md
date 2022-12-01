@@ -267,5 +267,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 05.1 (37.1): _Arquitetura de Computadores_
 - [X] 05.2 (37.2): _Arrays_
+- [X] 05.3 (37.3): _Nó e Listas Encadeadas_
 
 # [...]
