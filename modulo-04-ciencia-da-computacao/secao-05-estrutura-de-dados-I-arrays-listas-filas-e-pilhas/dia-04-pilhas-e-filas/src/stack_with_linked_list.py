@@ -26,3 +26,24 @@ class Stack:
     # Complexity O(1)
     def is_empty(self):
         return self.linked_list.is_empty()
+
+    # Complexity O(n)
+    def min_value(self):
+        min_value = None
+        for value in self.linked_list:
+            if min_value is None or value < min_value:
+                min_value = value
+        return min_value
+
+
+if __name__ == "__main__":
+    content_stack = Stack()
+
+    content_stack.push(1)
+    content_stack.push(-2)
+    content_stack.push(3)
+    content_stack.push(-5)
+    content_stack.push(7)
+    content_stack.pop()
+    content_stack.pop()
+    print(content_stack.min_value())
