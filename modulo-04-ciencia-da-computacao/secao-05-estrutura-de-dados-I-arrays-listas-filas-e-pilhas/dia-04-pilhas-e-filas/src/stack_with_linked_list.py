@@ -8,6 +8,9 @@ class Stack:
     def __len__(self):
         return len(self.linked_list)
 
+    def __iter__(self):
+        return iter(self.linked_list)
+
     # Complexity O(1)
     def push(self, value):
         self.linked_list.insert_last(value)
