@@ -1,4 +1,5 @@
 from node import Node
+from linked_list_iterator import LinkedListIterator
 
 
 class LinkedList:
@@ -12,6 +13,9 @@ class LinkedList:
 
     def __len__(self):
         return self.__length
+
+    def __iter__(self):
+        return LinkedListIterator(self.__head)
 
     # Complexity O(n)
     def __get_node_at(self, position):
