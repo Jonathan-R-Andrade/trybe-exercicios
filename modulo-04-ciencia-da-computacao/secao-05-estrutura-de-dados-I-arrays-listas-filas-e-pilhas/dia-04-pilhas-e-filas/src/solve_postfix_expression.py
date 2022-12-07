@@ -73,7 +73,7 @@ def convert_infix_expression_to_postfix(infix_expression: str) -> str:
 
 
 # Complexity O(n)
-def solve_postfix_expression(postfix_expression: str) -> str:
+def solve_postfix_expression(postfix_expression: str) -> float:
     stack = Stack()
     tokens_list = postfix_expression.split(" ")
 
