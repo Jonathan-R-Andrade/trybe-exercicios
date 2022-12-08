@@ -2,7 +2,7 @@ from stack_with_linked_list import Stack
 
 
 # Complexity O(n)
-def reverse_words(phrase):
+def reverse_words(phrase: str) -> str:
     stacks: list[Stack] = []
     curr_stack_index = -1
     for char in phrase:
@@ -13,7 +13,7 @@ def reverse_words(phrase):
             curr_stack_index -= 1
             continue
         if curr_stack_index >= 0:
-            if len(stacks) <= curr_stack_index:
+            if len(stacks) == curr_stack_index:
                 stacks.append(Stack())
             stacks[curr_stack_index].push(char)
 
