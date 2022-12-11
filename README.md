@@ -271,4 +271,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 05.4 (37.4): _Pilhas e Filas_
 - [X] 05.5 (37.5): _Projeto - TING - Trybe Is Not Google_
 
+##### [Seção 06 (Bloco 38): Estrutura de Dados II: Hashmaps e Sets](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-06-estrutura-de-dados-II-hashmaps-e-sets)
+
+- [X] 06.1 (38.1): _Hashmap e Dict_
+
 # [...]
