@@ -233,7 +233,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 14.1 (32.1): _CI/CD (sem exercícios)_
 - [X] 14.2 (32.2): _VPS (sem exercícios)_
 
-## [Ciência da Computação :hourglass_flowing_sand:](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao)
+## [Ciência da Computação :heavy_check_mark:](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao)
 
 ##### [Seção 01 (Bloco 33): Introdução à Python](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-01-introducao-a-python)
 
@@ -274,5 +274,5 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### [Seção 06 (Bloco 38): Estrutura de Dados II: Hashmaps e Sets](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-06-estrutura-de-dados-II-hashmaps-e-sets)
 
 - [X] 06.1 (38.1): _Hashmap e Dict_
-
-# [...]
+- [X] 06.2 (38.2): _Set_
+- [X] 06.3 (38.3): _Projeto - Restaurant Orders_
