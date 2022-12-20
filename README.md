@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 03.2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 03.3: _HTML & CSS - Seletores e posicionamento_
 - [X] 03.4: _HTML Semântico_
-- [X] 03.5: _[Projeto - Lessons Learned](https://Jonathan-R-Andrade.github.io/trybe-projetos/lessons-learned/)_
+- [X] 03.5: _[Projeto - Lessons Learned](https://github.com/Jonathan-R-Andrade/lessons-learned)_
 
 ##### [Seção 04 (Bloco 04): Introdução à JavaScript e Lógica de Programação](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-01-fundamentos-do-desenvolvimento-web/secao-04-introducao-a-javascript-e-logica-de-programacao)
 
@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 04.2: _JavaScript - Array e loop For_
 - [X] 04.3: _JavaScript - Lógica de Programação e Algoritmos_
 - [X] 04.4: _JavaScript - Objetos e funções_
-- [X] 04.5: _[Projeto - Playground Functions](https://github.com/Jonathan-R-Andrade/trybe-projetos/tree/main/playground-functions/)_
+- [X] 04.5: _[Projeto - Playground Functions](https://github.com/Jonathan-R-Andrade/playground-functions)_
 
 ##### [Seção 05 (Bloco 05): JavaScript: DOM, Eventos e Web Storage](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-01-fundamentos-do-desenvolvimento-web/secao-05-javascript-dom-eventos-e-web-storage)
 
@@ -41,11 +41,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 05.2: _JavaScript - Trabalhando com elementos_
 - [X] 05.3: _JavaScript - Eventos_
 - [X] 05.4: _JavaScript - Web Storage_
-- [X] 05.5: _[Projeto - Arte com Pixels](https://Jonathan-R-Andrade.github.io/trybe-projetos/pixels-art/)_
-- [X] 05.6: _[Projeto - Lista de tarefas](https://Jonathan-R-Andrade.github.io/trybe-projetos/todo-list/)_
-- [X] 05.7: _[Projeto - Meme Generator (Bônus)](https://Jonathan-R-Andrade.github.io/trybe-projetos/meme-generator/)_
-- [X] 05.7: _[Projeto - Adivinhe a Cor (Bônus)](https://Jonathan-R-Andrade.github.io/trybe-projetos/color-guess/)_
-- [X] 05.7: _[Projeto - Carta Misteriosa (Bônus)](https://Jonathan-R-Andrade.github.io/trybe-projetos/mistery-letter/)_
+- [X] 05.5: _[Projeto - Pixels Art](https://github.com/Jonathan-R-Andrade/pixels-art)_
+- [X] 05.6: _[Projeto - To-Do List](https://github.com/Jonathan-R-Andrade/to-do-list)_
+- [X] 05.7: _[Projeto - Meme Generator (Bônus)](https://github.com/Jonathan-R-Andrade/meme-generator)_
+- [X] 05.7: _[Projeto - Color Guess (Bônus)](https://github.com/Jonathan-R-Andrade/color-guess)_
+- [X] 05.7: _[Projeto - Mistery Letter (Bônus)](https://github.com/Jonathan-R-Andrade/mistery-letter)_
 
 ##### [Seção 06 (Bloco 06): HTML e CSS: Forms, Flexbox e Responsivo](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-01-fundamentos-do-desenvolvimento-web/secao-06-html-e-css-forms-flexbox-e-responsivo)
 
@@ -54,14 +54,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 06.3: _CSS Flexbox - Parte 1_
 - [X] 06.4: _CSS Flexbox - Parte 2_
 - [X] 06.5: _CSS Responsivo - Mobile First_
-- [X] 06.6: _[Projeto - Trybewarts](https://Jonathan-R-Andrade.github.io/trybe-projetos/trybewarts/)_
+- [X] 06.6: _[Projeto - Trybewarts](https://github.com/Jonathan-R-Andrade/trybewarts)_
 
 ##### [Seção 07 (Bloco 07): Introdução à JavaScript ES6 e Testes Unitários](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-01-fundamentos-do-desenvolvimento-web/secao-07-introducao-a-javascript-es6-e-testes-unitarios)
 
 - [X] 07.1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 07.2: _JavaScript ES6 - Fluxo de exceção e Objetos_
 - [X] 07.3: _Primeiros passos em Jest_
-- [X] 07.4: _[Projeto - JavaScript Testes Unitários](https://github.com/Jonathan-R-Andrade/trybe-projetos/tree/main/js-unit-tests/)_
+- [X] 07.4: _[Projeto - JS Unit Tests](https://github.com/Jonathan-R-Andrade/js-unit-tests)_
 
 ##### [Seção 08 (Bloco 08): Higher Order Functions do JavaScript ES6](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-01-fundamentos-do-desenvolvimento-web/secao-08-higher-order-functions-do-javascript-es6)
 
@@ -70,14 +70,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 08.3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [X] 08.4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [X] 08.5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
-- [X] 08.6: _[Projeto - Zoo functions](https://github.com/Jonathan-R-Andrade/trybe-projetos/tree/main/zoo-functions/)_
+- [X] 08.6: _[Projeto - Zoo Functions](https://github.com/Jonathan-R-Andrade/zoo-functions)_
 
 ##### [Seção 09 (Bloco 09): JavaScript e Testes Assíncronos](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-01-fundamentos-do-desenvolvimento-web/secao-09-javascript-e-testes-assincronos)
 
 - [X] 09.1: _JavaScript Assíncrono e Callbacks_
 - [X] 09.2: _JavaScript Assíncrono - Fetch API e async/await_
 - [X] 09.3: _Jest - Testes Assíncronos_
-- [X] 09.4: _[Projeto - Carrinho de Compras](https://Jonathan-R-Andrade.github.io/trybe-projetos/shopping-cart/)_
+- [X] 09.4: _[Projeto - Shopping Cart](https://github.com/Jonathan-R-Andrade/shopping-cart)_
 
 ## [Desenvolvimento Front-end :heavy_check_mark:](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-02-desenvolvimento-front-end)
 
@@ -85,13 +85,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 01.1 (10.1): _'Hello, world!' no React!_
 - [X] 01.2 (10.2): _Componentes React_
-- [X] 01.3 (10.3): _[Projeto - Sistema Solar](https://Jonathan-R-Andrade.github.io/trybe-projetos/solar-system/)_
+- [X] 01.3 (10.3): _[Projeto - Solar System](https://github.com/Jonathan-R-Andrade/solar-system)_
 
 ##### [Seção 02 (Bloco 11): Componentes com Estado, Eventos e Formulários com React](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-02-desenvolvimento-front-end/secao-02-componentes-com-estado-eventos-e-formularios-com-react)
 
 - [X] 02.1 (11.1): _Componentes com estado e eventos_
 - [X] 02.2 (11.2): _Formulários no React_
-- [X] 02.3 (11.3): _[Projeto - Tryunfo](https://Jonathan-R-Andrade.github.io/trybe-projetos/tryunfo/)_
+- [X] 02.3 (11.3): _[Projeto - Tryunfo](https://github.com/Jonathan-R-Andrade/tryunfo)_
 
 ##### [Seção 03 (Bloco 12): Ciclo de Vida de Componentes e React Router](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-02-desenvolvimento-front-end/secao-03-ciclo-de-vida-de-componentes-e-react-router)
 
