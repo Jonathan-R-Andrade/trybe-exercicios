@@ -182,7 +182,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 06.2 (24.2): _ORM - Associations_
 - [X] 06.3 (24.3): _JWT - (JSON Web Token)_
 - [X] 06.4 (24.4): _Testando APIs com Testes de Integração_
-- [X] 06.5 (24.5): _Projeto - API de Blogs_
+- [X] 06.5 (24.5): _[Projeto - Blogs API](https://github.com/Jonathan-R-Andrade/blogs-api)_
 
 ##### [Seção 07 (Bloco 25): Deployment](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/secao-07-deployment)
 
@@ -223,6 +223,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 12.1 (30.1): _Mongoose e arquitetura MSC(camada Model)_
 - [X] 12.2 (30.2): _Mongoose e arquitetura MSC(camada Service e Controller)_
+- [X] 12.3 (30.3): _Projeto - Car Shop_
 
 ##### Seção 13 (Bloco 31): Projeto - App de Delivery
 
@@ -254,7 +255,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 03.1 (35.1): _Arquitetura de redes_
 - [X] 03.2 (35.2): _Raspagem de Dados_
 - [X] 03.3 (35.3): _Outras Ferramentas de Raspagem de Dados_
-- [X] 03.4 (35.4): _Projeto - Tech news_
+- [X] 03.4 (35.4): _[Projeto - Tech news](https://github.com/Jonathan-R-Andrade/tech-news)_
 
 ##### [Seção 04 (Bloco 36): Algoritmos](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-04-algoritmos)
 
