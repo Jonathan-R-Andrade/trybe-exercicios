@@ -174,7 +174,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 05.2 (23.2): _Arquitetura de Software - Camada de Controller e Service_
 - [X] 05.3 (23.3): _Arquitetura Web - Rest e Restful_
 - [X] 05.4 (23.4): _Arquitetura de Software - Testando as Camadas_
-- [X] 05.5 (23.5): _Projeto - Store Manager_
+- [X] 05.5 (23.5): _[Projeto - Store Manager](https://github.com/Jonathan-R-Andrade/store-manager)_
 
 ##### [Seção 06 (Bloco 24): Node.js: ORM e Autenticação](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-03-desenvolvimento-back-end/secao-06-nodejs-orm-e-autenticacao)
 
@@ -248,7 +248,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 02.1 (34.1): _P.O.O em Python_
 - [X] 02.2 (34.2): _Padrões - Iterator, Adapter, Strategy_
 - [X] 02.3 (34.3): _Padrões - Decorator, Observer, Factory_
-- [X] 02.4 (34.4): _Projeto - Relatórios de Estoque_
+- [X] 02.4 (34.4): _[Projeto - Inventory Reports](https://github.com/Jonathan-R-Andrade/inventory-report)_
 
 ##### [Seção 03 (Bloco 35): Redes e Raspagem de Dados](https://github.com/Jonathan-R-Andrade/trybe-exercicios/tree/main/modulo-04-ciencia-da-computacao/secao-03-redes-e-raspagem-de-dados)
 
